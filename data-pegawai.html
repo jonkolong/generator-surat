@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Pegawai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        .nama-jabatan,
+        .nama-pegawai,
+        .nip-pegawai {
+            font-size: 14px;
+        }
+        .foto-pegawai {
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+<body>
+
+  <section>
+        <div class="container">
+          <div class="judul-asn">
+            <h4 class="my-4 text-center" data-aos="fade-up" data-aos-delay="0">Daftar Aparatur Sipil Negara<br />Dinas Komunikasi, Informatika, Statistik dan Persandian<br />Kabupaten Deli Serdang</h4>
+          </div>
+          <div class="data-asn d-flex flex-row flex-wrap justify-content-center">
+            <!-- card 1 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="50" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725438580.png"
+                class="foto-pegawai card-img-top img-fluid rounded-top-5"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">Kepala Dinas</h5>
+                <p class="nama-pegawai card-text text-center m-0 p-0 fw-semibold">Drs. Khairul Azman, M.AP</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nama-pegawai card-text text-center m-0 p-0 text-muted">NIP 19740301 199403 1 005</p>
+              </div>
+            </div>
+            <!-- card 1 -->
+            <!-- card 2 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="100" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725463242.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">Sekretaris</h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Julyatin, SE,M.Si</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19740717 200312 2 011</p>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <!-- card 3 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="150" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725462628.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center"><small>Kabid Informasi dan Komunikasi Publik</small></h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Asep Kurniawan, S.Ds,M.AP</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19830919 201001 1 024</p>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <!-- card 4 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="200" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725463907.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center"><small>Kabid Teknologi Informasi, Komunikasi dan Persandian</small></h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Batubara Irwansyah Putra, S.Kom, MM</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19820620 201001 1 020</p>
+              </div>
+            </div>
+            <!-- card 4 -->
+            <!-- card 5 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="250" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725524944.jpg"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center"><small>Kabid Layanan Pemerintah Berbasis Elektronik</small></h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Raden Mewah Ristanto, S.STP</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19830122 200112 1 003</p>
+              </div>
+            </div>
+            <!-- card 5 -->
+            <!-- card 6 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="300" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725462812.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center"><small>Kabid Statistik</small></h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Edi Jamian Nasution, SE</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19680919 199503 1 004</p>
+              </div>
+            </div>
+            <!-- card 6 -->
+            <!-- card 7 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="350" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725464662.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center"><small>Kasubbag Umum</small></h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Tety Elvida, SKM.,M.KM</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19741108 200701 2 019</p>
+              </div>
+            </div>
+            <!-- card 7 -->
+            <!-- card 8 -->
+            <!-- <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="100" style="width: 15rem">
+              <img src="https://img.freepik.com/free-psd/3d-rendering-avatar_23-2150833572.jpg?w=740&t=st=1718361667~exp=1718362267~hmac=ea6594fe9dff306f952087faed9f1a713b4cdf08fed2dbe43004c2fa1690e081" class="foto-pegawai card-img-top rounded-top-5 img-fluid" alt="..." />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center"><small>Analis Keuangan Pusat dan Daerah Ahli Muda</small></h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Kosong</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP Kosong</p>
+              </div>
+            </div> -->
+            <!-- card 8 -->
+            <!-- card 9 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="400" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725464783.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">Perencana<br />Ahli Muda</h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Syahfitri, S.Ag</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19701025 199803 1 011</p>
+              </div>
+            </div>
+            <!-- card 9 -->
+            <!-- card 10 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="450" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725466159.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Pranata Hubungan Masyarakat Ahli Muda</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Edi Susanto, S.Sos</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19700124 199403 1 007</p>
+              </div>
+            </div>
+            <!-- card 10 -->
+            <!-- card 11 -->
+            <!-- <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="100" style="width: 15rem">
+              <img src="https://img.freepik.com/free-psd/3d-rendering-avatar_23-2150833572.jpg?w=740&t=st=1718361667~exp=1718362267~hmac=ea6594fe9dff306f952087faed9f1a713b4cdf08fed2dbe43004c2fa1690e081" class="foto-pegawai card-img-top rounded-top-5 img-fluid" alt="..." />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Pranata Hubungan Masyarakat Ahli Muda</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Kosong</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP Kosong</p>
+              </div>
+            </div> -->
+            <!-- card 11 -->
+            <!-- card 12 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="500" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725464998.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Pranata Hubungan Masyarakat Ahli Muda</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Efridawati, S.Sos</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19781015 200801 2 020</p>
+              </div>
+            </div>
+            <!-- card 12 -->
+            <!-- card 13 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="550" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725510143.png"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Manggala Informatika Ahli Muda</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Eka Irma Novita, SE</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19850731 200801 2 005</p>
+              </div>
+            </div>
+            <!-- card 13 -->
+            <!-- card 14 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="600" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725525369.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Manggala Informatika Ahli Muda</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Pitoyo G.M. Tambunan, ST</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19770418 200312 1 006</p>
+              </div>
+            </div>
+            <!-- card 14 -->
+            <!-- card 15 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="650" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725465029.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Manggala Informatika Ahli Muda</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Desman Sahala Siahaan, ST</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19751214 200903 1 001</p>
+              </div>
+            </div>
+            <!-- card 15 -->
+            <!-- card 16 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="700" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725466096.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Pranata Hubungan Masyarakat Ahli Muda</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Saut H.F. Panggabean, S.Kom</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19810109 200903 1 003</p>
+              </div>
+            </div>
+            <!-- card 16 -->
+            <!-- card 17 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="750" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725437060.jpg"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Pranata Hubungan Masyarakat Ahli Muda</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold" style="font-size:14px;">John Richardo Sinaga, S.Sos</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19850622 201403 1 005</p>
+              </div>
+            </div>
+            <!-- card 17 -->
+            <!-- card 18 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="800" style="width: 15rem">
+              <img
+                src="https://img.freepik.com/free-psd/3d-rendering-avatar_23-2150833572.jpg?w=740&t=st=1718361667~exp=1718362267~hmac=ea6594fe9dff306f952087faed9f1a713b4cdf08fed2dbe43004c2fa1690e081"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Pranata Hubungan Masyarakat Ahli Muda</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold" style="font-size:14px;">Fahrizal Mukmin Nst, S.Sos</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19730315 199403 1 006</p>
+              </div>
+            </div>
+            <!-- card 18 -->
+            <!-- card 19 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="850" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725465060.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Statistisi Ahli Muda</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Juli Ramadhani Purba, SE</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19810713 200903 2 007</p>
+              </div>
+            </div>
+            <!-- card 19 -->
+            <!-- card 20 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="900" style="width: 15rem">
+              <img
+                src="https://img.freepik.com/free-psd/3d-rendering-avatar_23-2150833572.jpg?w=740&t=st=1718361667~exp=1718362267~hmac=ea6594fe9dff306f952087faed9f1a713b4cdf08fed2dbe43004c2fa1690e081"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Statistisi Ahli Muda</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Ramli Silitonga, S.Si,M.Si</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19720709 200212 1 005</p>
+              </div>
+            </div>
+            <!-- card 20 -->
+            <!-- card 21 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="950" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725465566.jpeg"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Statistisi Ahli Muda</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Asna Hutapea, SE</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19701025 200003 2 006</p>
+              </div>
+            </div>
+            <!-- card 21 -->
+            <!-- card 22 -->
+            	<div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="900" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725510326.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Bendahara</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Hafiz Nami Hasugian, A.Md.Kom</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19981105 202012 1 001</p>
+              </div>
+            </div>
+            <!-- card 22 -->
+            <!-- card 23 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="900" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725510710.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Ahli Pertama Penguji Perangkat Telekominikasi</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Syahrul Wahyudi, ST</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19941025 202012 1 001</p>
+              </div>
+            </div>
+            <!-- card 23 -->
+            <!-- card 24 -->
+            	<div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="900" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725510251.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Pengadministrasi Kepegawaian</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Dian Sari, S.Sos</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19840413 201003 2 001</p>
+              </div>
+            </div>
+            <!-- card 24 -->
+            <!-- card 25 -->
+            <div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="900" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725521717.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Analis Barang Milik Negara</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Arwan, S.Sos</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19730914 200701 1 024</p>
+              </div>
+            </div>
+            <!-- card 25 -->
+            <!-- card 26 -->
+            	<div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="900" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725510362.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Pengadministrasian Data Penyajian dan Publikasi</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Joko Siswanto</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19820505 200903 1 007</p>
+              </div>
+            </div>
+            <!-- card 26 -->
+            <!-- card 24 
+            	<div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="900" style="width: 15rem">
+              <img
+                src="https://img.freepik.com/free-psd/3d-rendering-avatar_23-2150833572.jpg?w=740&t=st=1718361667~exp=1718362267~hmac=ea6594fe9dff306f952087faed9f1a713b4cdf08fed2dbe43004c2fa1690e081"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Pengadministrasian Perencanaan dan Program</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Naomi Simatupang</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19670304 198903 2 016</p>
+              </div>
+            </div>
+             card 24 -->
+            <!-- card 27 -->
+            	<div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="900" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725510473.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Pengadministrasian Umum</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Risnaeniwati Sembiring, S.Kom</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19790915 201101 2 006</p>
+              </div>
+            </div>
+            <!-- card 27 -->
+            <!-- card 28 -->
+            	<div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="900" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725519743.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Analisis Perbendaharaan</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Kasiatik, S.Sos</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19800118 200903 2 003</p>
+              </div>
+            </div>
+            <!-- card 28 -->
+            <!-- card 29 -->
+            	<div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="900" style="width: 15rem">
+              <img
+                src="https://img.freepik.com/free-psd/3d-rendering-avatar_23-2150833572.jpg?w=740&t=st=1718361667~exp=1718362267~hmac=ea6594fe9dff306f952087faed9f1a713b4cdf08fed2dbe43004c2fa1690e081"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Pengadministrasian Data Penyajian dan Publikasi</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Eliana Tarigan</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19690629 199103 2 009</p>
+              </div>
+            </div>
+            <!-- card 29 -->
+            <!-- card 30 -->
+            	<div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="900" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1725510416.JPG"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Pengadministrasian Data Penyajian dan Publikasi</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Netty Marhaeniwati Marpaung</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP 19680501 199103 2 013</p>
+              </div>
+            </div>
+            <!-- card 30 -->
+            
+            <!-- card 31 -->
+            	<div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="900" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1752037193.png"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Statistisi Ahli Pertama</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Wahyuni Setia Ningsih, S.Si</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP : 19970507 202504 2 001</p>
+              </div>
+            </div>
+            <!-- card 31 -->
+            <!-- card 32 -->
+            	<div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="900" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1752037220.png"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Penata Kelola Sistem dan Teknologi Informasi</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Tenti Astria Purba, ST</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP : 19900715 202504 2 001</p>
+              </div>
+            </div>
+            <!-- card 32 -->
+            <!-- card 33 -->
+            	<div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="900" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1752037165.png"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Pranata Hubungan Masyarakat Ahli Pertama</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Tsani Afifah, S.I.Kom</p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP : 20001205 202504 2 003</p>
+              </div>
+            </div>
+            <!-- card 33 -->
+            <!-- card 34 -->
+            	<div class="card rounded-5 border-0 shadow m-2" data-aos="fade-up" data-aos-delay="900" style="width: 15rem">
+              <img
+                src="https://dinaskominfostan.deliserdangkab.go.id/wp-content/berkas/1752037142.png"
+                class="foto-pegawai card-img-top rounded-top-5 img-fluid"
+                alt="..."
+              />
+              <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                <h5 class="nama-jabatan card-title text-center">
+                  <small>Penata Kelola Sistem dan Teknologi Informasi</small>
+                </h5>
+                <p class="nama-pegawai card-text text-center m-0 fw-semibold">Muhammad Eko Prambudi, S.Kom. </p>
+                <hr class="p-0 m-0 w-100" />
+                <p class="nip-pegawai card-text text-center text-muted">NIP : 19940925 202504 1 001</p>
+              </div>
+            </div>
+            <!-- card 34 -->
+         
+            
+            
+            
+          </div>
+        </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
