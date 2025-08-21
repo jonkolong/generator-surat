@@ -19,11 +19,6 @@
         .signature-block p { margin-bottom: 0; }
         .preserve-lines { white-space: pre-line; }
         .underline { text-decoration: underline; }
-        
-        /* @page {
-            size: A4;
-            margin: 1.5cm 1.5cm 1.5cm 1.5cm;
-        } */
 
         @media print {
             /* Aturan untuk halaman cetak itu sendiri */
@@ -123,9 +118,9 @@
                     <div class="card border-0 shadow mb-4">
                         <div class="card-header"><h5><i class="bi bi-person-check"></i> Penerima Kuasa</h5></div>
                         <div class="card-body">
-                            <marquee behavior="" direction="" class="bg-info-subtle m-0">
-                                <p class="fst-italic p-2 m-0"><small>Untuk pengisian data penerima kuasa, silahkan berkoordinasi ke Dinas Kominfostan!</small></p>
-                            </marquee>
+                            <div class="alert alert-info py-2" role="alert">
+                                <small class="fst-italic">Untuk pengisian data penerima kuasa, silahkan berkoordinasi ke Dinas Kominfostan!</small>
+                            </div>
                             <div class="mb-3"><label class="form-label">Nama Penerima Kuasa:</label><input type="text" class="form-control" v-model="attorney.name"></div>
                             <div class="mb-3"><label class="form-label">NIP Penerima Kuasa:</label><input type="text" class="form-control" v-model="attorney.nip" @input="handleNumericInput($event, 18)" placeholder="18 digit angka"></div>
                             <div class="mb-3"><label class="form-label">Jabatan Penerima Kuasa:</label><input type="text" class="form-control" v-model="attorney.position"></div>
@@ -144,9 +139,9 @@
                     <div class="card border-0 shadow mb-4">
                         <div class="card-header"><h5><i class="bi bi-person-check"></i> PIC SSL</h5></div>
                         <div class="card-body">
-                            <marquee behavior="" direction="" class="bg-info-subtle m-0">
-                                <p class="fst-italic p-2 m-0"><small>Untuk pengisian data PIC SSL, silahkan berkoordinasi ke Dinas Kominfostan!</small></p>
-                            </marquee>
+                            <div class="alert alert-info py-2" role="alert">
+                                <small class="fst-italic">Untuk pengisian data PIC SSL, silahkan berkoordinasi ke Dinas Kominfostan!</small>
+                            </div>
                             <div class="mb-3"><label class="form-label">Nama PIC SSL:</label><input type="text" class="form-control" v-model="attorneyssl.name"></div>
                             <div class="mb-3"><label class="form-label">No. HP/WA PIC SSL:</label><input type="text" class="form-control" v-model="attorneyssl.phone" @input="handleNumericInput($event, 13)" placeholder="10-13 digit angka"></div>
                         </div>
@@ -290,9 +285,9 @@
                             <tr><td style="width:150px">Nama Kabupaten</td><td>: Deli Serdang</td></tr>
                             <tr><td style="width:150px">Nama Kecamatan</td><td>: {{ village.kecamatanName }}</td></tr>
                             <tr><td style="width:150px">Nama Desa</td><td>: {{ village.name }}</td></tr>
-                            <tr><td>Alamat url</td><td>: {{ letter.domainName }}</span></td></tr>
-                            <tr><td>Nama PIC</td><td>: {{ attorneyssl.name }}</span></td></tr>
-                            <tr><td>Nomor HP/WA</td><td>: {{ attorneyssl.phone }}</span></td></tr>
+                            <tr><td>Alamat url</td><td>: {{ letter.domainName }}</td></tr>
+                            <tr><td>Nama PIC</td><td>: {{ attorneyssl.name }}</td></tr>
+                            <tr><td>Nomor HP/WA</td><td>: {{ attorneyssl.phone }}</td></tr>
                         </table>
 
                         <p class="mt-2" style="text-align: justify;">Demikian permohonan ini disampaikan, atas kerjasamanya diucapkan terima kasih.</p>

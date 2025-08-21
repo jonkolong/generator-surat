@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Generator Surat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f2f5; }
+        .preview-area .page { background: white; padding: 2cm; margin-bottom: 2rem; box-shadow: 0 0 10px rgba(0,0,0,0.1); page-break-after: always; }
+        .page:last-child { page-break-after: avoid; }
+        .header-text h5, .header-text p { margin-bottom: 0; line-height: 1.2; }
+        .letter-table td { vertical-align: top; padding-right: 10px; }
+        .signature-block p { margin-bottom: 0; }
+        .preserve-lines { white-space: pre-line; }
+        .underline { text-decoration: underline; }
+
+        @media print {
+            /* Aturan untuk halaman cetak itu sendiri */
+            @page {
+                size: A4;
+                margin: 2cm; /* Margin standar untuk dokumen resmi */
+            }
+
+            /* Sembunyikan semua elemen yang tidak perlu dicetak */
+            .form-area, .no-print, header, footer, .navbar {
+                display: none !important;
+            }
+
+            /* Atur ulang body dan pastikan font sesuai untuk dicetak */
+            body {
+                background: white !important; /* Hilangkan background gradient */
+                font-size: 12pt; /* Ukuran font standar untuk dokumen */
+                font-family: 'Arial', serif; /* Font formal untuk surat */
+                color: black;
+            }
+            
+            /* Pastikan area pratinjau mengisi seluruh halaman */
+            .preview-area {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            /* Atur setiap halaman virtual (.page) */
+            .preview-area .page {
+                box-shadow: none; /* Hilangkan bayangan */
+                margin: 0;
+                padding: 0;
+                border: none; /* Hilangkan border jika ada */
+                width: 100%;
+                page-break-after: always; /* Pastikan setiap .page memulai halaman baru */
+            }
+            
+            .page:last-child {
+                page-break-after: avoid; /* Halaman terakhir tidak perlu page break setelahnya */
+            }
+
+            /* Paksa semua teks menjadi hitam agar konsisten */
+            h1, h2, h3, h4, h5, h6, p, td, th, li, a, strong, span {
+                color: #000 !important;
+            }
+            
+            /* Pastikan gambar logo tidak pecah dan ukurannya pas */
+            .page img {
+                max-width: 80px !important; /* Batasi lebar logo */
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+  <div id="appttekades">
+        <div class="modal fade" id="employeeModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header"><h5 class="modal-title">{{ editingIndex === null ? 'Tambah' : 'Edit' }} Pemohon</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label">Pilih Desa:</label>
+                            <select class="form-select" v-model="editingEmployee.selectedDesaId" :disabled="editingIndex !== null">
+                                <option disabled value="">Pilih Desa...</option>
+                                <option v-for="desa in desaList" :key="desa.idDesa" :value="desa.idDesa">{{ desa.namaDesa }}</option>
+                            </select>
+                             <div class="form-text" v-if="editingIndex !== null">Desa tidak dapat diubah saat mengedit.</div>
+                        </div>
+                        <hr>
+                        <div class="mb-2">
+                            <label class="form-label">Alamat Kantor Desa:</label>
+                            <textarea class="form-control" v-model="editingEmployee.officeAddress" rows="2" placeholder="Contoh: Jln. Besar No. 1, Dusun I"></textarea>
+                        </div>
+                        <div class="mb-2"><label class="form-label">Nama Lengkap:</label><input type="text" class="form-control" v-model="editingEmployee.name"></div>
+                        <div class="mb-2"><label class="form-label">Jabatan:</label><input type="text" class="form-control" v-model="editingEmployee.position"></div>
+                        <div class="mb-2"><label class="form-label">No. KTP:</label><input type="text" class="form-control" v-model="editingEmployee.ktp" @input="handleNumericInput" data-maxlength="16" placeholder="16 digit angka"></div>
+                        <div class="mb-2"><label class="form-label">No. HP/WA:</label><input type="text" class="form-control" v-model="editingEmployee.phone" @input="handleNumericInput" data-maxlength="13" placeholder="10-13 digit angka"></div>
+                    </div>
+                    <div class="modal-footer"><button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Tutup</button><button type="button" class="btn btn-primary" @click="saveEmployee" :disabled="isEmployeeFormInvalid"><i class="bi bi-save2"></i> Simpan</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid my-4">
+             <div class="text-center form-area mb-4"><h1>Formulir Sertifikat Elektronik Kepala Desa</h1></div>
+            <div class="row">
+                <div class="col-md-4 form-area">
+                    <div class="card border-0 shadow mb-4">
+                        <div class="card-header"><h5><i class="bi bi-file-earmark-text"></i> Detil Surat</h5></div>
+                        <div class="card-body">
+                            <div class="mb-3"><label class="form-label">Tanggal Surat:</label><input type="date" class="form-control" v-model="data.letterDate"></div>
+                            <div class="mb-3"><label class="form-label">Nomor Surat:</label><input type="text" class="form-control" v-model="data.letterNumber"></div>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow mb-4">
+                        <div class="card-header"><h5><i class="bi bi-person-badge"></i> Detil Unit Kerja & Penandatangan</h5></div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label class="form-label">Pilih Kecamatan:</label>
+                                <select class="form-select" v-model="selectedKecamatanName">
+                                    <option disabled value="">Pilih Kecamatan...</option>
+                                    <option v-for="kecamatan in kecamatanList" :key="kecamatan" :value="kecamatan">{{ kecamatan }}</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Alamat Instansi (Kecamatan):</label>
+                                <textarea class="form-control" v-model="data.agency.address" rows="3"></textarea>
+                            </div>
+                            <hr>
+                            <div class="mb-3"><label class="form-label">Nama Penandatangan (Camat):</label><input type="text" class="form-control" v-model="data.recommender.name" placeholder="Contoh: Drs. Nama Lengkap, M.Si"></div>
+                            <div class="mb-3"><label class="form-label">NIP Penandatangan:</label><input type="text" class="form-control" v-model="data.recommender.nip" @input="handleNumericInput" data-maxlength="18" placeholder="18 digit angka"></div>
+                            <div class="mb-3"><label class="form-label">Pangkat/Gol. Ruang:</label><select class="form-select" v-model="data.recommender.rank"><option disabled value="">Pilih Pangkat...</option><option v-for="rank in rankOptions" :key="rank" :value="rank">{{ rank }}</option></select></div>
+                            <div class="mb-3">
+                                <label class="form-label">Jabatan Penandatangan:</label>
+                                <textarea class="form-control" v-model="data.recommender.jabatan" rows="1"></textarea>
+                                <div class="form-text">Jabatan otomatis terisi, namun bisa diedit.</div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="card border-0 shadow mb-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h5><i class="bi bi-people"></i> Daftar Pemohon</h5>
+                            <button class="btn btn-outline-primary btn" @click="openAddModal" :disabled="!selectedKecamatanName"><i class="bi bi-plus-lg"></i> Tambah</button>
+                        </div>
+                        <div class="card-body p-0">
+                            <table class="table table-striped table-hover mb-0">
+                                <thead><tr><th>Nama</th><th style="width: 80px;">Aksi</th></tr></thead>
+                                <tbody>
+                                     <tr v-if="data.employees.length === 0"><td colspan="3" class="text-center text-muted py-4">Belum ada pemohon.</td></tr>
+                                    <tr v-for="(employee, index) in data.employees" :key="index">
+                                        <td>{{ employee.name }}</td>
+                                        <td class="d-flex justify-content-end gap-1">
+                                            <button class="btn btn-sm btn-outline-primary rounded-5" @click="openEditModal(index)"><i class="bi bi-pencil"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger rounded-5" @click="removeEmployee(index)"><i class="bi bi-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8 preview-area">
+                    <div class="mb-4 no-print text-end">
+                        <button class="btn btn-outline-primary" @click="window.print()"><i class="bi bi-printer"></i> Cetak</button>
+                    </div>
+                    
+                    <div class="page">
+                        <table style="width: 100%; border-bottom: 3px solid black;" class="mb-3">
+                            <tr>
+                                <td style="width: 10%; text-align: center; vertical-align: middle;"><img :src="data.agency.logoUrl" alt="Logo" style="width: 80px; height: auto;" class="pb-2"></td>
+                                <td class="header-text text-center align-middle pb-2">
+                                    <h5>PEMERINTAH KABUPATEN DELI SERDANG</h5>
+                                    <h5 class="fw-semibold">{{ kopSurat.toUpperCase() }}</h5>
+                                    <p class="preserve-lines">{{ data.agency.address }}</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="text-end">{{ tempatSurat }}, {{ formattedDate }}</p>
+                        <table class="mb-4">
+                            <tr><td style="width: 80px;">Nomor</td><td>: {{ data.letterNumber }}</td></tr>
+                            <tr><td>Sifat</td><td>: Penting</td></tr>
+                            <tr><td>Lampiran</td><td>: {{ formattedLampiran }}</td></tr>
+                            <tr><td>Perihal</td><td>: Permohonan Penerbitan Sertifikat Elektronik</td></tr>
+                        </table>
+                        <p>Yth. Kepala Dinas Komunikasi, Informatika,<br>Statistik dan Persandian Kabupaten Deli Serdang<br>di Lubuk Pakam</p>
+                        <p class="mt-4 mb-0">Dengan hormat,</p>
+                        <p class="mb-0" style="text-align: justify;">Dalam rangka mendukung Penerapan Regulasi SPBE dan Penerapan Sertifikat Elektronik untuk Tanda Tangan Elektronik, maka kami bermohon untuk Penerbitan Sertifikat Elektronik kepada Kepala Desa di lingkungan Kecamatan {{ selectedKecamatanName }} Kabupaten Deli Serdang, dengan ini turut kami lampirkan:</p>
+                        <ol style="padding-left: 1.5rem;"><li style="text-align: justify;">Surat Rekomendasi Pimpinan Permohonan Penerbitan Sertifikat Elektronik;</li><li style="text-align: justify;">Daftar Nama Untuk Penerbitan Sertifikat Elektronik;</li><li style="text-align: justify;">Formulir Pendaftaran Sertifikat Elektronik Untuk Individu;</li><li>Fotokopi SK Jabatan Terakhir;</li><li>Fotokopi KTP.</li></ol>
+                        <p class="mt-4" style="text-align: justify;">Demikian informasi yang dapat disampaikan, atas perhatian dan kerjasamanya diucapkan terima kasih.</p>
+
+                        <div class="d-flex justify-content-end">
+                            <div class="col-6"></div>
+                            <div class="">
+                                <div class="signature-block text-start">
+                                    <div class="preserve-lines">{{ data.recommender.jabatan }}</div>
+                                    <div style="height: 80px;"></div>
+                                    <p><strong>{{ formattedSignerName }}</strong></p>
+                                    <p>{{ formattedSignerRank }}</p>
+                                    <p>NIP {{ formatNipForDisplay(data.recommender.nip) }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="page">
+                         <table style="width: 100%; border-bottom: 3px solid black;" class="mb-3">
+                            <tr>
+                                <td style="width: 10%; text-align: center; vertical-align: middle;"><img :src="data.agency.logoUrl" alt="Logo" style="width: 80px; height: auto;" class="pb-2"></td>
+                                <td class="header-text text-center align-middle pb-2">
+                                    <h5>PEMERINTAH KABUPATEN DELI SERDANG</h5>
+                                    <h5 class="fw-semibold">{{ kopSurat.toUpperCase() }}</h5>
+                                    <p class="preserve-lines">{{ data.agency.address }}</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="mt-4">Saya yang bertanda tangan dibawah ini:</p>
+                        <table class="letter-table my-3">
+                            <tr><td style="width:150px">Nama lengkap</td><td>: {{ formattedSignerName }}</td></tr>
+                            <tr><td>NIP</td><td>: {{ formatNipForDisplay(data.recommender.nip) }}</td></tr>
+                            <tr><td class="text-nowrap">Pangkat/Gol. Ruang</td><td>: {{ data.recommender.rank }}</td></tr>
+                            <tr>
+                                <td style="vertical-align: top;">Jabatan</td>
+                                <td>: <span class="preserve-lines">{{ data.recommender.jabatan }}</span></td>
+                            </tr>
+                            <tr><td>Instansi</td><td>: Kabupaten Deli Serdang</td></tr>
+                            <tr><td>Unit Kerja</td><td>: {{ kopSurat }}</td></tr>
+                        </table>
+                        <p style="text-align: justify;">Dengan ini memberikan rekomendasi kepada kepala desa sebagaimana data terlampir untuk melakukan pendaftaran sertifikat elektronik sekaligus menjadi pemegang sertifikat elektronik yang digunakan untuk tanda tangan elektronik, pengamanan dokumen elektronik, dan/atau pengamanan surat elektronik.</p>
+                        <p class="mt-4" style="text-align: justify;">Demikian surat rekomendasi ini dibuat, agar dapat digunakan sebagaimana mestinya.</p>
+                        
+                        <div class="d-flex justify-content-end">
+                            <div class="col-6"></div>
+                            <div class="">
+                                 <div class="signature-block text-start">
+                                    <p>{{ signaturePlace }}, {{ formattedDate }}</p>
+                                    <div class="preserve-lines">{{ data.recommender.jabatan }}</div>
+                                    <div style="height: 80px;"></div>
+                                    <p><strong>{{ formattedSignerName }}</strong></p>
+                                    <p>{{ formattedSignerRank }}</p>
+                                    <p>NIP {{ formatNipForDisplay(data.recommender.nip) }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page">
+                        <div class="text-center mb-4"><h6 class="mb-3 fw-semibold">LAMPIRAN DAFTAR NAMA KEPALA DESA<br>UNTUK PENERBITAN SERTIFIKAT ELEKTRONIK<br>{{ kopSurat.toUpperCase() }}</h6></div>
+                        <table class="table table-bordered border-dark mt-4">
+                            <thead class="text-center"><tr><th style="width: 5%;">No</th><th>Nama</th><th>Jabatan</th></tr></thead>
+                            <tbody>
+                                <tr v-for="(employee, index) in data.employees" :key="index">
+                                    <td class="text-center">{{ index + 1 }}</td>
+                                    <td class="text-nowrap">{{ formatNameToUppercaseCore(employee.name) }}</td>
+                                    <td>{{ employee.position }} {{ employee.desaName }}</td>
+                                </tr>
+                                <tr v-if="data.employees.length === 0"><td colspan="4" class="text-center text-muted">Silahkan tambahkan pemohon</td></tr>
+                            </tbody>
+                        </table>
+
+                        <div class="d-flex justify-content-end">
+                            <div class="col-6"></div>
+                            <div class="">
+                                <div class="signature-block text-start">
+                                    <p>{{ signaturePlace }}, {{ formattedDate }}</p>
+                                    <div class="preserve-lines">{{ data.recommender.jabatan }}</div>
+                                    <div style="height: 80px;"></div>
+                                    <p class="text-nowrap"><strong>{{ formattedSignerName }}</strong></p>
+                                    <p>{{ formattedSignerRank }}</p>
+                                    <p>NIP {{ formatNipForDisplay(data.recommender.nip) }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page" v-for="(employee, index) in data.employees" :key="index">
+                        <table style="width: 100%; border-bottom: 3px solid black;" class="mb-3">
+                            <tr>
+                                <td style="width: 10%; text-align: center; vertical-align: middle;"><img :src="data.agency.logoUrl" alt="Logo" style="width: 80px; height: auto;" class="pb-2"></td>
+                                <td class="header-text text-center align-middle pb-2">
+                                    <h5>PEMERINTAH KABUPATEN DELI SERDANG</h5>
+                                    <h5>{{ kopSurat.toUpperCase() }}</h5>
+                                    <h5 class="fw-semibold">DESA {{ formatNameToUppercaseCore(employee.desaName) }}</h5>
+                                    <p class="preserve-lines">{{ employee.officeAddress }}</p>
+                                    </td>
+                            </tr>
+                        </table>
+                        <p class="mt-4">Saya yang bertanda tangan dibawah ini:</p>
+                        <table class="letter-table my-3">
+                            <tr><td style="width:150px">Nama lengkap</td><td>: {{ formatNameToUppercaseCore(employee.name) }}</td></tr>
+                            <tr><td>KTP EL</td><td>: {{ employee.ktp }}</td></tr>
+                            <tr><td>Instansi</td><td>: Kabupaten Deli Serdang</td></tr>
+                            <tr><td>Desa</td><td>: {{ employee.desaName }}</td></tr>
+                            <tr><td>Jabatan</td><td>: {{ employee.position }}</td></tr>
+                            <tr><td>Nomor HP/WA</td><td>: {{ formatPhoneForDisplay(employee.phone) }}</td></tr>
+                        </table>
+                        <p>mengajukan permohonan penerbitan Sertifikat Elektronik untuk:</p><p><span class="h4"><i class="bi bi-check2-square"></i></span> Tanda Tangan Elektronik <span class="fst-italic">(Document Signing)</span></p>
+                        <p class="mt-4 mb-0">Dengan ini saya menyatakan bahwa:</p>
+                        <ol style="padding-left: 1.5rem;"><li style="text-align: justify;">Data yang saya isikan di atas adalah benar dan dapat dipertanggungjawabkan, jika dikemudian hari ditemukan bahwa data tersebut adalah tidak benar, maka saya bersedia dikenakan sanksi administrasi dan/atau pidana sesuai dengan ketentuan peraturan perundang-undangan yang berlaku; dan</li><li style="text-align: justify;">Menyetujui Perjanjian Pemilik Sertifikat Elektronik.</li></ol>
+                        
+                        <div class="d-flex justify-content-end">
+                            <div class="col-6"></div>
+                            <div class="">
+                                <div class="signature-block text-start">
+                                    <p>{{ signaturePlace }}, {{ formattedDate }}</p>
+                                    <p class="text-nowrap">{{ employee.position }} {{ employee.desaName }},</p>
+                                    <div style="height: 80px;"></div>
+                                    <p><strong>{{ formatNameToUppercaseCore(employee.name) }}</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    const { createApp, ref, reactive, computed, onMounted, watch } = Vue;
+
+    createApp({
+        setup() {
+            const employeeModal = ref(null);
+            const rankOptions = ref(['Juru Muda / I.a', 'Juru Muda Tk. I / I.b', 'Juru / I.c', 'Juru Tk. I / I.d','Pengatur Muda / II.a', 'Pengatur Muda Tk. I / II.b', 'Pengatur / II.c', 'Pengatur Tk. I / II.d','Penata Muda / III.a', 'Penata Muda Tk. I / III.b', 'Penata / III.c', 'Penata Tk. I / III.d','Pembina / IV.a', 'Pembina Tk. I / IV.b', 'Pembina Utama Muda / IV.c', 'Pembina Utama Madya / IV.d', 'Pembina Utama / IV.e']);
+
+            const data = reactive({
+                letterDate: new Date().toISOString().slice(0, 10),
+                letterNumber: '800.1.11/CONTOH',
+                agency: { name: '', address: 'Jalan Diponegoro No. 1, Kode Pos 20511\nTelp (061) 795 0000 | Surel: kecamatan@deliserdangkab.go.id', logoUrl: 'https://portal.deliserdangkab.go.id/wp-content/berkas/1725411853.png' },
+                recommender: { name: '', nip: '', rank: '', jabatan: '' },
+                employees: []
+            });
+
+            const editingEmployee = ref({});
+            const editingIndex = ref(null);
+
+            const allData = ref([]);
+            const selectedKecamatanName = ref('');
+
+            onMounted(() => {
+                employeeModal.value = new bootstrap.Modal(document.getElementById('employeeModal'));
+                axios.get('datakades.json').then(response => {
+                    allData.value = response.data;
+                }).catch(error => console.error("Gagal memuat datakades.json:", error));
+            });
+
+            const kecamatanList = computed(() => allData.value.map(k => k.namaKecamatan));
+            
+            const desaList = computed(() => {
+                if (!selectedKecamatanName.value) return [];
+                const kecamatan = allData.value.find(k => k.namaKecamatan === selectedKecamatanName.value);
+                return kecamatan ? kecamatan.desa : [];
+            });
+
+            // START: MODIFIED - Abbreviation logic added for Jabatan
+            watch(selectedKecamatanName, (newName) => {
+                data.employees = []; 
+                if (newName) {
+                    let jabatanKecamatan = newName;
+                    if (newName === 'Sinembah Tanjung Muda Hilir') {
+                        jabatanKecamatan = 'STM Hilir';
+                    } else if (newName === 'Sinembah Tanjung Muda Hulu') {
+                        jabatanKecamatan = 'STM Hulu';
+                    }
+                    data.recommender.jabatan = `Camat ${jabatanKecamatan}`;
+                }
+            });
+            // END: MODIFIED
+
+            watch(() => editingEmployee.value.selectedDesaId, (newDesaId) => {
+                if (!newDesaId || editingIndex.value !== null) return; 
+
+                const selectedDesa = desaList.value.find(d => d.idDesa === newDesaId);
+                if (selectedDesa) {
+                    editingEmployee.value.name = selectedDesa.namaKades;
+                    editingEmployee.value.desaName = selectedDesa.namaDesa;
+                    editingEmployee.value.position = 'Kepala Desa';
+                }
+            }, { deep: true });
+
+            const kopSurat = computed(() => {
+                return selectedKecamatanName.value ? `Kecamatan ${selectedKecamatanName.value}` : '';
+            });
+
+            const tempatSurat = computed(() => {
+                const kecName = selectedKecamatanName.value;
+                if (kecName === 'Sinembah Tanjung Muda Hilir') return 'STM Hilir';
+                if (kecName === 'Sinembah Tanjung Muda Hulu') return 'STM Hulu';
+                return kecName || 'Lubuk Pakam';
+            });
+            
+            const signaturePlace = computed(() => {
+                const kecName = selectedKecamatanName.value;
+                if (kecName === 'Sinembah Tanjung Muda Hilir') return 'STM Hilir';
+                if (kecName === 'Sinembah Tanjung Muda Hulu') return 'STM Hulu';
+                return kecName || 'Lubuk Pakam';
+            });
+
+            const isEmployeeFormInvalid = computed(() => {
+                return !editingEmployee.value.name || !editingEmployee.value.ktp || !editingEmployee.value.phone || !editingEmployee.value.position || !editingEmployee.value.selectedDesaId || !editingEmployee.value.officeAddress;
+            });
+            
+            const openAddModal = () => {
+                if (!selectedKecamatanName.value) return; 
+                
+                editingIndex.value = null;
+                editingEmployee.value = reactive({ 
+                    selectedDesaId: '',
+                    name: '', 
+                    ktp: '', 
+                    position: '',
+                    desaName: '',
+                    officeAddress: '', 
+                    phone: '' 
+                });
+                employeeModal.value.show();
+            };
+
+            const openEditModal = (index) => {
+                editingIndex.value = index;
+                editingEmployee.value = reactive({ ...data.employees[index] });
+                employeeModal.value.show();
+            };
+            
+            const saveEmployee = () => { 
+                if (isEmployeeFormInvalid.value) return;
+                if (editingIndex.value === null) { 
+                    data.employees.push({ ...editingEmployee.value }); 
+                } else { 
+                    data.employees[editingIndex.value] = { ...editingEmployee.value }; 
+                } 
+                employeeModal.value.hide(); 
+            };
+
+            const removeEmployee = (index) => { if (confirm(`Yakin hapus pemohon: ${data.employees[index].name}?`)) { data.employees.splice(index, 1); } };
+            
+            const formattedDate = computed(() => {
+                if (!data.letterDate) return '';
+                const date = new Date(data.letterDate);
+                date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
+                return date.toLocaleDateString('id-ID', { day: '2-digit', month: 'long', year: 'numeric' });
+            });
+
+            const formattedSignerRank = computed(() => {
+                const rank = data.recommender.rank || '';
+                return rank.split('/')[0].trim();
+            });
+
+            const formattedLampiran = computed(() => {
+                const count = data.employees.length + 4;
+                const terbilang = (n) => {
+                    const satuan = ["", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan", "sepuluh", "sebelas"];
+                    if (n < 12) return satuan[n];
+                    if (n < 20) return terbilang(n - 10) + " belas";
+                    if (n < 100) return terbilang(Math.floor(n / 10)) + " puluh " + terbilang(n % 10);
+                    return n.toString();
+                };
+                return `${count} (${terbilang(count)}) berkas`;
+            });
+
+            const formatNameToUppercaseCore = (rawName) => {
+                const nameToFormat = (rawName || '').trim();
+                if (!nameToFormat) return '';
+                let namePart = nameToFormat, backTitlesPart = '';
+                const commaIndex = nameToFormat.indexOf(',');
+                if (commaIndex !== -1) {
+                    backTitlesPart = nameToFormat.substring(commaIndex);
+                    namePart = nameToFormat.substring(0, commaIndex).trim();
+                }
+                const words = namePart.split(' '), frontTitles = [], coreName = [];
+                for (const word of words) {
+                    if (word.endsWith('.')) { frontTitles.push(word); } 
+                    else { coreName.push(word); }
+                }
+                const frontStr = frontTitles.join(' '), coreNameUpper = coreName.join(' ').toUpperCase();
+                let result = [];
+                if (frontStr) result.push(frontStr);
+                if (coreNameUpper) result.push(coreNameUpper);
+                return result.join(' ') + backTitlesPart;
+            };
+
+            const formattedSignerName = computed(() => {
+                return formatNameToUppercaseCore(data.recommender.name);
+            });
+            
+            const formatNipForDisplay = (nip) => {
+                if (!nip || nip.length !== 18) return nip; 
+                return `${nip.slice(0, 8)} ${nip.slice(8, 14)} ${nip.slice(14, 15)} ${nip.slice(15, 18)}`;
+            };
+            
+            const formatPhoneForDisplay = (phone) => {
+                if (!phone || phone.length < 10) return phone;
+                return `${phone.slice(0, 4)} ${phone.slice(4, 8)} ${phone.slice(8)}`;
+            };
+
+            const handleNumericInput = (event) => {
+                const maxLength = event.target.dataset.maxlength;
+                let value = event.target.value.replace(/\D/g, '');
+                if (maxLength && value.length > maxLength) {
+                    value = value.slice(0, maxLength);
+                }
+                event.target.value = value;
+            };
+
+            return {
+                data, openAddModal, openEditModal, saveEmployee, removeEmployee, formattedDate,
+                editingEmployee, editingIndex, rankOptions, 
+                kopSurat, tempatSurat, 
+                formattedSignerRank, formattedLampiran, formatNipForDisplay, formatPhoneForDisplay, handleNumericInput,
+                formattedSignerName,
+                formatNameToUppercaseCore,
+                window,
+                isEmployeeFormInvalid,
+                kecamatanList,
+                desaList,
+                selectedKecamatanName,
+                signaturePlace
+            };
+        }
+    }).mount('#appttekades');
+    </script>
+
+</body>
+</html>
