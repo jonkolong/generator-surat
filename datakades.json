@@ -1,0 +1,2034 @@
+[
+    {
+        "idKecamatan": 1,
+        "namaKecamatan": "Bangun Purba",
+        "desa": [
+            {
+                "idDesa": 1,
+                "namaDesa": "Bah Balua",
+                "namaKades": "Berlin Saragih"
+            },
+            {
+                "idDesa": 2,
+                "namaDesa": "Bangun  Purba",
+                "namaKades": "Ekada Tarigan Tua"
+            },
+            {
+                "idDesa": 3,
+                "namaDesa": "Batu  Gingging",
+                "namaKades": "Chandra Hasbullah"
+            },
+            {
+                "idDesa": 4,
+                "namaDesa": "Batu  Rata",
+                "namaKades": "Suprayitno"
+            },
+            {
+                "idDesa": 5,
+                "namaDesa": "Bagerpang",
+                "namaKades": "Rasman Saragih, SE"
+            },
+            {
+                "idDesa": 6,
+                "namaDesa": "Cimahe",
+                "namaKades": "Landung Hidayat"
+            },
+            {
+                "idDesa": 7,
+                "namaDesa": "Marombun  Barat",
+                "namaKades": "Pinter Sinaga"
+            },
+            {
+                "idDesa": 8,
+                "namaDesa": "Marombun Ujung Jawi",
+                "namaKades": "Mariani Br. Ginting"
+            },
+            {
+                "idDesa": 9,
+                "namaDesa": "Sialang",
+                "namaKades": "Selamat"
+            },
+            {
+                "idDesa": 10,
+                "namaDesa": "Sukaluwei",
+                "namaKades": "Syahril Tandiko"
+            },
+            {
+                "idDesa": 11,
+                "namaDesa": "Tanjung   Purba",
+                "namaKades": "Tebe Holo Purba"
+            },
+            {
+                "idDesa": 12,
+                "namaDesa": "Urung Ganjang",
+                "namaKades": "Cerdas Damanik"
+            },
+            {
+                "idDesa": 13,
+                "namaDesa": "Bah Perak",
+                "namaKades": "Enneria Purba"
+            },
+            {
+                "idDesa": 14,
+                "namaDesa": "Bandar  Meriah",
+                "namaKades": "Heru Tantio"
+            },
+            {
+                "idDesa": 15,
+                "namaDesa": "Bangun Purba Tengah",
+                "namaKades": "Heri Swardi"
+            },
+            {
+                "idDesa": 16,
+                "namaDesa": "Greahan",
+                "namaKades": "Heriansah"
+            },
+            {
+                "idDesa": 17,
+                "namaDesa": "Ujung  Rambe",
+                "namaKades": "Dian Ika"
+            },
+            {
+                "idDesa": 18,
+                "namaDesa": "Bandar Gugung",
+                "namaKades": "Edy Tanto Barus"
+            },
+            {
+                "idDesa": 19,
+                "namaDesa": "Bandar  Kuala",
+                "namaKades": "Rudi Wardensius Sinaga, ST"
+            },
+            {
+                "idDesa": 20,
+                "namaDesa": "Damak  Maliho",
+                "namaKades": "Estiana Saragih"
+            },
+            {
+                "idDesa": 21,
+                "namaDesa": "Mabar",
+                "namaKades": "Beni Aman Saragih"
+            },
+            {
+                "idDesa": 22,
+                "namaDesa": "Perguroan",
+                "namaKades": "Anton Sembiring"
+            },
+            {
+                "idDesa": 23,
+                "namaDesa": "Rumah Deleng ",
+                "namaKades": "Justianus Tarigan"
+            },
+            {
+                "idDesa": 24,
+                "namaDesa": "Sibaganding",
+                "namaKades": "Janur Barus, ST"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 2,
+        "namaKecamatan": "Batang Kuis",
+        "desa": [
+            {
+                "idDesa": 25,
+                "namaDesa": "Bakaran Batu",
+                "namaKades": "Muslim Susanto"
+            },
+            {
+                "idDesa": 26,
+                "namaDesa": "Baru",
+                "namaKades": "Sugianto"
+            },
+            {
+                "idDesa": 27,
+                "namaDesa": "Batang Kuis Pekan",
+                "namaKades": "Khairul Arzani, SH"
+            },
+            {
+                "idDesa": 28,
+                "namaDesa": "Bintang Meriah",
+                "namaKades": "Kasiman"
+            },
+            {
+                "idDesa": 29,
+                "namaDesa": "Mesjid",
+                "namaKades": "Herman Felani, SH"
+            },
+            {
+                "idDesa": 30,
+                "namaDesa": "Paya Gambar",
+                "namaKades": "Harmaini"
+            },
+            {
+                "idDesa": 31,
+                "namaDesa": "Sena",
+                "namaKades": "Yuli"
+            },
+            {
+                "idDesa": 32,
+                "namaDesa": "Sidodadi",
+                "namaKades": "Edi Suardi"
+            },
+            {
+                "idDesa": 33,
+                "namaDesa": "Sugiharjo",
+                "namaKades": "Hariadi Putra"
+            },
+            {
+                "idDesa": 34,
+                "namaDesa": "Tanjung Sari",
+                "namaKades": "Muhammad Hidayah"
+            },
+            {
+                "idDesa": 35,
+                "namaDesa": "Tumpatan Nibung",
+                "namaKades": "Sarianto"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 3,
+        "namaKecamatan": "Beringin",
+        "desa": [
+            {
+                "idDesa": 36,
+                "namaDesa": "Aras Kabu",
+                "namaKades": "Abdul Rahman Ependi"
+            },
+            {
+                "idDesa": 37,
+                "namaDesa": "Beringin",
+                "namaKades": "Sudarsono, SS"
+            },
+            {
+                "idDesa": 38,
+                "namaDesa": "Emplasmen  Kuala Namu",
+                "namaKades": "Koko Kurniawan"
+            },
+            {
+                "idDesa": 39,
+                "namaDesa": "Karang Anyar",
+                "namaKades": "Paidi"
+            },
+            {
+                "idDesa": 40,
+                "namaDesa": "Pasar V Kebun Kelapa",
+                "namaKades": "H. Sumantri"
+            },
+            {
+                "idDesa": 41,
+                "namaDesa": "Sidodadi Ramunia",
+                "namaKades": "Salamun"
+            },
+            {
+                "idDesa": 42,
+                "namaDesa": "Sido Urip",
+                "namaKades": "H. Sugiono"
+            },
+            {
+                "idDesa": 43,
+                "namaDesa": "Tumpatan",
+                "namaKades": "Suhendrawan"
+            },
+            {
+                "idDesa": 44,
+                "namaDesa": "Pasar VI Kuala Namu",
+                "namaKades": "Wiwin Purwadi"
+            },
+            {
+                "idDesa": 45,
+                "namaDesa": "Serdang",
+                "namaKades": "Henri Parulian Habeahan"
+            },
+            {
+                "idDesa": 46,
+                "namaDesa": "Sidoarjo II Ramunia",
+                "namaKades": "Kamler Simbolon"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 4,
+        "namaKecamatan": "Biru-Biru",
+        "desa": [
+            {
+                "idDesa": 47,
+                "namaDesa": "Aji Baho",
+                "namaKades": "Rahmat Tarigan"
+            },
+            {
+                "idDesa": 48,
+                "namaDesa": "Candi Rejo",
+                "namaKades": "Edi Prayetna"
+            },
+            {
+                "idDesa": 49,
+                "namaDesa": "Kutomulyo",
+                "namaKades": "Erwanto"
+            },
+            {
+                "idDesa": 50,
+                "namaDesa": "Mbaruai",
+                "namaKades": "Efendy Ginting"
+            },
+            {
+                "idDesa": 51,
+                "namaDesa": "Namo Suro Baru",
+                "namaKades": "Janial Ginting"
+            },
+            {
+                "idDesa": 52,
+                "namaDesa": "Namo Tualang",
+                "namaKades": "Wira Prana Sembiring"
+            },
+            {
+                "idDesa": 53,
+                "namaDesa": "Rumah Great",
+                "namaKades": "Pengarapen Ginting"
+            },
+            {
+                "idDesa": 54,
+                "namaDesa": "Selamat",
+                "namaKades": "Bahrun"
+            },
+            {
+                "idDesa": 55,
+                "namaDesa": "Sidodadi",
+                "namaKades": "Rusli"
+            },
+            {
+                "idDesa": 56,
+                "namaDesa": "Sidomulyo",
+                "namaKades": "Satriawan"
+            },
+            {
+                "idDesa": 57,
+                "namaDesa": "Biru-Biru",
+                "namaKades": "Sada Ukur Sembiring"
+            },
+            {
+                "idDesa": 58,
+                "namaDesa": "Kuala Dekah",
+                "namaKades": "Komando Ginting"
+            },
+            {
+                "idDesa": 59,
+                "namaDesa": "Mardinding Julu",
+                "namaKades": "Amran Ginting"
+            },
+            {
+                "idDesa": 60,
+                "namaDesa": "Penen",
+                "namaKades": "Gunanta Tarigan"
+            },
+            {
+                "idDesa": 61,
+                "namaDesa": "Peria-Ria",
+                "namaKades": "Abadi Tarigan,S.Pd"
+            },
+            {
+                "idDesa": 62,
+                "namaDesa": "Sarilaba Jahe",
+                "namaKades": "Horas Hutapea"
+            },
+            {
+                "idDesa": 63,
+                "namaDesa": "Tanjung Sena",
+                "namaKades": "Julianus"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 5,
+        "namaKecamatan": "Deli Tua",
+        "desa": [
+            {
+                "idDesa": 64,
+                "namaDesa": "Kedai Durian",
+                "namaKades": "Zainul Akhyar"
+            },
+            {
+                "idDesa": 65,
+                "namaDesa": "Mekar Sari",
+                "namaKades": "Juliadi"
+            },
+            {
+                "idDesa": 66,
+                "namaDesa": "Suka Makmur",
+                "namaKades": "Syahriel, S.Sos"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 6,
+        "namaKecamatan": "Galang",
+        "desa": [
+            {
+                "idDesa": 67,
+                "namaDesa": "Bandar Kuala",
+                "namaKades": "Nasimin"
+            },
+            {
+                "idDesa": 68,
+                "namaDesa": "Baru Titi Besi",
+                "namaKades": "Faisal Ramadan Siregar"
+            },
+            {
+                "idDesa": 69,
+                "namaDesa": "Galang Barat",
+                "namaKades": "Lukenra Sinaga"
+            },
+            {
+                "idDesa": 70,
+                "namaDesa": "Galang Suka",
+                "namaKades": "Drs. Suhelman, S. Pdi"
+            },
+            {
+                "idDesa": 71,
+                "namaDesa": "Jaharun A",
+                "namaKades": "Sugianto"
+            },
+            {
+                "idDesa": 72,
+                "namaDesa": "Jaharun B",
+                "namaKades": "Jarno"
+            },
+            {
+                "idDesa": 73,
+                "namaDesa": "Kelapa Satu",
+                "namaKades": "Mukhtar"
+            },
+            {
+                "idDesa": 74,
+                "namaDesa": "Kramat Gajah",
+                "namaKades": "Sugiaman"
+            },
+            {
+                "idDesa": 75,
+                "namaDesa": "Kotangan",
+                "namaKades": "Maya Jaya Ekaputra, SE"
+            },
+            {
+                "idDesa": 76,
+                "namaDesa": "Kotasan",
+                "namaKades": "Ngadion"
+            },
+            {
+                "idDesa": 77,
+                "namaDesa": "Nogo Rejo",
+                "namaKades": "Suyono"
+            },
+            {
+                "idDesa": 78,
+                "namaDesa": "Paku",
+                "namaKades": "Meliati Sinaga"
+            },
+            {
+                "idDesa": 79,
+                "namaDesa": "Paya Sampir",
+                "namaKades": "Siti Fatimah Br Sembiring"
+            },
+            {
+                "idDesa": 80,
+                "namaDesa": "Petangguhan",
+                "namaKades": "Herianto"
+            },
+            {
+                "idDesa": 81,
+                "namaDesa": "Petumbukan",
+                "namaKades": "Zulhilfan Saragih, S.H.I"
+            },
+            {
+                "idDesa": 82,
+                "namaDesa": "Pisang Pala",
+                "namaKades": "Muhammad Ali"
+            },
+            {
+                "idDesa": 83,
+                "namaDesa": "Sei Karang",
+                "namaKades": "Muhammad Nur"
+            },
+            {
+                "idDesa": 84,
+                "namaDesa": "Sei Putih",
+                "namaKades": "Herman Kaya Siregar, S.Sos"
+            },
+            {
+                "idDesa": 85,
+                "namaDesa": "Tanah Abang",
+                "namaKades": "Andi Faisal"
+            },
+            {
+                "idDesa": 86,
+                "namaDesa": "Tanah Merah",
+                "namaKades": "Iswadi Tarigan, ST"
+            },
+            {
+                "idDesa": 87,
+                "namaDesa": "Timbang Deli",
+                "namaKades": "Hendri Ardiansyah Putera"
+            },
+            {
+                "idDesa": 88,
+                "namaDesa": "Batu  Lokong",
+                "namaKades": "Haryono"
+            },
+            {
+                "idDesa": 89,
+                "namaDesa": "Paya Kuda",
+                "namaKades": "Rahmadani Fitri Selian"
+            },
+            {
+                "idDesa": 90,
+                "namaDesa": "Pulau Tagor Baru",
+                "namaKades": "Muhammad Yacob"
+            },
+            {
+                "idDesa": 91,
+                "namaDesa": "Tanjung Gusti",
+                "namaKades": "Romadani"
+            },
+            {
+                "idDesa": 92,
+                "namaDesa": "Tanjung Siporkis",
+                "namaKades": "Hartono"
+            },
+            {
+                "idDesa": 93,
+                "namaDesa": "Juhar Baru",
+                "namaKades": "Norbent Girsang, S.Si"
+            },
+            {
+                "idDesa": 94,
+                "namaDesa": "Paya Itik",
+                "namaKades": "Darma Bakti Barus"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 7,
+        "namaKecamatan": "Gunung Meriah",
+        "desa": [
+            {
+                "idDesa": 95,
+                "namaDesa": "Gunung Paribuan",
+                "namaKades": "Nurtiami Br. Tarigan"
+            },
+            {
+                "idDesa": 96,
+                "namaDesa": "Gunung Sinembah",
+                "namaKades": "Julianson Saragih"
+            },
+            {
+                "idDesa": 97,
+                "namaDesa": "Kuta Bayu",
+                "namaKades": "Jahopal Damanik"
+            },
+            {
+                "idDesa": 98,
+                "namaDesa": "Kuta Tengah",
+                "namaKades": "Ngajari Sembiring"
+            },
+            {
+                "idDesa": 99,
+                "namaDesa": "Marjandi Pematang",
+                "namaKades": "Roy Agusmer Silalahi, S.Pd"
+            },
+            {
+                "idDesa": 100,
+                "namaDesa": "Marjandi Tongah",
+                "namaKades": "Sariaman Purba"
+            },
+            {
+                "idDesa": 101,
+                "namaDesa": "Pekan Gunung Meriah",
+                "namaKades": "Jhon Feryaman Saragih"
+            },
+            {
+                "idDesa": 102,
+                "namaDesa": "Simempar",
+                "namaKades": "Simar Sembiring"
+            },
+            {
+                "idDesa": 103,
+                "namaDesa": "Ujung Meriah",
+                "namaKades": "Budiman Tarigan"
+            },
+            {
+                "idDesa": 104,
+                "namaDesa": "Bintang Meriah",
+                "namaKades": "Arihta Ginting"
+            },
+            {
+                "idDesa": 105,
+                "namaDesa": "Gunung Meriah",
+                "namaKades": "Abdul Barus"
+            },
+            {
+                "idDesa": 106,
+                "namaDesa": "Gunung Seribu",
+                "namaKades": "Ernalisa Br. Purba"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 8,
+        "namaKecamatan": "Hamparan Perak",
+        "desa": [
+            {
+                "idDesa": 107,
+                "namaDesa": "Bulu Cina",
+                "namaKades": "Ramiyadi"
+            },
+            {
+                "idDesa": 108,
+                "namaDesa": "Hamparan Perak",
+                "namaKades": "Muhammad Helmi"
+            },
+            {
+                "idDesa": 109,
+                "namaDesa": "Klambir",
+                "namaKades": "Ibrahim"
+            },
+            {
+                "idDesa": 110,
+                "namaDesa": "Klambir V Kampung",
+                "namaKades": "Mishan"
+            },
+            {
+                "idDesa": 111,
+                "namaDesa": "Klambir V Kebun",
+                "namaKades": "Muhammad Nurdin"
+            },
+            {
+                "idDesa": 112,
+                "namaDesa": "Klumpang Kampung",
+                "namaKades": "Eka Yuswardi"
+            },
+            {
+                "idDesa": 113,
+                "namaDesa": "Klumpang Kebun",
+                "namaKades": "Aidil Fikri"
+            },
+            {
+                "idDesa": 114,
+                "namaDesa": "Kota Rantang",
+                "namaKades": "Sabaruddin Ahmad, SE"
+            },
+            {
+                "idDesa": 115,
+                "namaDesa": "Lama",
+                "namaKades": "Ahyat"
+            },
+            {
+                "idDesa": 116,
+                "namaDesa": "Paluh Kurau",
+                "namaKades": "M. Yusuf Batu Bara"
+            },
+            {
+                "idDesa": 117,
+                "namaDesa": "Paluh Manan",
+                "namaKades": "Nasrul"
+            },
+            {
+                "idDesa": 118,
+                "namaDesa": "Paya Bakung",
+                "namaKades": "Pariono"
+            },
+            {
+                "idDesa": 119,
+                "namaDesa": "Selemak",
+                "namaKades": "Rohmad"
+            },
+            {
+                "idDesa": 120,
+                "namaDesa": "Sialang Muda",
+                "namaKades": "Abdul Haris"
+            },
+            {
+                "idDesa": 121,
+                "namaDesa": "Tandem Hilir I",
+                "namaKades": "Herianto"
+            },
+            {
+                "idDesa": 122,
+                "namaDesa": "Tandem Hilir II",
+                "namaKades": "M. Effendi Kuda Diri"
+            },
+            {
+                "idDesa": 123,
+                "namaDesa": "Tandem Hulu II",
+                "namaKades": "Suhardi"
+            },
+            {
+                "idDesa": 124,
+                "namaDesa": "Kota Datar",
+                "namaKades": "Mazni, S Pd.I;"
+            },
+            {
+                "idDesa": 125,
+                "namaDesa": "Sei Baharu",
+                "namaKades": "Suriyaman"
+            },
+            {
+                "idDesa": 126,
+                "namaDesa": "Tandem Hulu I",
+                "namaKades": "Sugito"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 9,
+        "namaKecamatan": "Kutalimbaru",
+        "desa": [
+            {
+                "idDesa": 127,
+                "namaDesa": "Kutalimbaru",
+                "namaKades": "Surya Tarigan, S. Pt"
+            },
+            {
+                "idDesa": 128,
+                "namaDesa": "Sampe Cita",
+                "namaKades": "Muhtar Keliat"
+            },
+            {
+                "idDesa": 129,
+                "namaDesa": "Sawit Rejo",
+                "namaKades": "Syahriawan"
+            },
+            {
+                "idDesa": 130,
+                "namaDesa": "Sei Mencirim",
+                "namaKades": "Johan Wahyu, S. Pd. I"
+            },
+            {
+                "idDesa": 131,
+                "namaDesa": "Silebo Lebo",
+                "namaKades": "Bahagia"
+            },
+            {
+                "idDesa": 132,
+                "namaDesa": "Namo Rube Julu",
+                "namaKades": "Satimin"
+            },
+            {
+                "idDesa": 133,
+                "namaDesa": "Kwala Lau Bicik",
+                "namaKades": "Sedia Sembiring"
+            },
+            {
+                "idDesa": 134,
+                "namaDesa": "Lau Bakeri",
+                "namaKades": "Adir"
+            },
+            {
+                "idDesa": 135,
+                "namaDesa": "Namo Mirik",
+                "namaKades": "Pinter"
+            },
+            {
+                "idDesa": 136,
+                "namaDesa": "Pasar X",
+                "namaKades": "Musim Sembiring"
+            },
+            {
+                "idDesa": 137,
+                "namaDesa": "Suka Dame",
+                "namaKades": "Ponten Manik"
+            },
+            {
+                "idDesa": 138,
+                "namaDesa": "Suka Makmur",
+                "namaKades": "Bahtiar Ginting"
+            },
+            {
+                "idDesa": 139,
+                "namaDesa": "Suka Rende",
+                "namaKades": "Joni Ginting"
+            },
+            {
+                "idDesa": 140,
+                "namaDesa": "Perpanden",
+                "namaKades": "Setia Budi"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 10,
+        "namaKecamatan": "Labuhan Deli",
+        "desa": [
+            {
+                "idDesa": 141,
+                "namaDesa": "Helvetia",
+                "namaKades": "Agus Salim"
+            },
+            {
+                "idDesa": 142,
+                "namaDesa": "Karang Gading",
+                "namaKades": "Agus Sanjaya"
+            },
+            {
+                "idDesa": 143,
+                "namaDesa": "Manunggal",
+                "namaKades": "Mukhlisin"
+            },
+            {
+                "idDesa": 144,
+                "namaDesa": "Telaga Tujuh",
+                "namaKades": "Sunarto"
+            },
+            {
+                "idDesa": 145,
+                "namaDesa": "Pematang Johar",
+                "namaKades": "Sudarman, S,Pd"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 11,
+        "namaKecamatan": "Lubuk Pakam",
+        "desa": [
+            {
+                "idDesa": 146,
+                "namaDesa": "Bakaran Batu",
+                "namaKades": "Muhammad Irwan Tanjung"
+            },
+            {
+                "idDesa": 147,
+                "namaDesa": "Pagar Merbau III",
+                "namaKades": "Budi Cayadi"
+            },
+            {
+                "idDesa": 148,
+                "namaDesa": "Sekip",
+                "namaKades": "Rahmat"
+            },
+            {
+                "idDesa": 149,
+                "namaDesa": "Tanjung Garbus I Jati Sari",
+                "namaKades": "Basuki Rebo"
+            },
+            {
+                "idDesa": 150,
+                "namaDesa": "Pagar Jati",
+                "namaKades": "Lamtiur Silitonga"
+            },
+            {
+                "idDesa": 151,
+                "namaDesa": "Pasar Melintang",
+                "namaKades": "David Sagala"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 12,
+        "namaKecamatan": "Namorambe",
+        "desa": [
+            {
+                "idDesa": 152,
+                "namaDesa": "Batu Gemuk",
+                "namaKades": "Suleiman Sembiring"
+            },
+            {
+                "idDesa": 153,
+                "namaDesa": "Batu Penjemuran",
+                "namaKades": "Martinus Ginting"
+            },
+            {
+                "idDesa": 154,
+                "namaDesa": "Jaba",
+                "namaKades": "Rusdi Surbakti"
+            },
+            {
+                "idDesa": 155,
+                "namaDesa": "Jati Kesuma",
+                "namaKades": "Indarto"
+            },
+            {
+                "idDesa": 156,
+                "namaDesa": "Kuta Tualah",
+                "namaKades": "Masa Sembiring"
+            },
+            {
+                "idDesa": 157,
+                "namaDesa": "Namo Landur",
+                "namaKades": "Aditiya Jaya Sembiring"
+            },
+            {
+                "idDesa": 158,
+                "namaDesa": "Gunung Berita",
+                "namaKades": "Ferdinan Tarigan"
+            },
+            {
+                "idDesa": 159,
+                "namaDesa": "Sudirejo",
+                "namaKades": "Suroso"
+            },
+            {
+                "idDesa": 160,
+                "namaDesa": "Uruk Gedang",
+                "namaKades": "Marhen Bukit"
+            },
+            {
+                "idDesa": 161,
+                "namaDesa": "Batu Mbelin",
+                "namaKades": "Imanuel Barus"
+            },
+            {
+                "idDesa": 162,
+                "namaDesa": "Cinta Rakyat",
+                "namaKades": "Hermansyah Sembiring"
+            },
+            {
+                "idDesa": 163,
+                "namaDesa": "Deli Tua",
+                "namaKades": "Tongat Ginting"
+            },
+            {
+                "idDesa": 164,
+                "namaDesa": "Gunung Kelawas",
+                "namaKades": "Reno Ginting, S.I.P"
+            },
+            {
+                "idDesa": 165,
+                "namaDesa": "Kuta Tengah",
+                "namaKades": "Natanail Pelawi"
+            },
+            {
+                "idDesa": 166,
+                "namaDesa": "Kwala Simeme",
+                "namaKades": "Orbanta Br. Sembiring,S.Pd"
+            },
+            {
+                "idDesa": 167,
+                "namaDesa": "Lau Mulgab",
+                "namaKades": "Darma Sitepu"
+            },
+            {
+                "idDesa": 168,
+                "namaDesa": "Lubang Ido",
+                "namaKades": "Beni Ferdaus Tarigan"
+            },
+            {
+                "idDesa": 169,
+                "namaDesa": "Namo Batang",
+                "namaKades": "Sejahtra Tarigan"
+            },
+            {
+                "idDesa": 170,
+                "namaDesa": "Namo Mbelin",
+                "namaKades": "Tenang Sembiring"
+            },
+            {
+                "idDesa": 171,
+                "namaDesa": "Namo Pakam",
+                "namaKades": "Kornelius Kemit"
+            },
+            {
+                "idDesa": 172,
+                "namaDesa": "Namo Pinang",
+                "namaKades": "Edi Suranta Tarigan"
+            },
+            {
+                "idDesa": 173,
+                "namaDesa": "Rimo Mungkur",
+                "namaKades": "Hormat Bukit"
+            },
+            {
+                "idDesa": 174,
+                "namaDesa": "Rumah Mbacang",
+                "namaKades": "Edi Suranta S. Meliala"
+            },
+            {
+                "idDesa": 175,
+                "namaDesa": "Salang Tungir",
+                "namaKades": "Sehat Ginting"
+            },
+            {
+                "idDesa": 176,
+                "namaDesa": "Suka Mulia Hulu",
+                "namaKades": "Terkelin Sembiring"
+            },
+            {
+                "idDesa": 177,
+                "namaDesa": "Silue Lue",
+                "namaKades": "Edikin Pelawi"
+            },
+            {
+                "idDesa": 178,
+                "namaDesa": "Timbang Lawan",
+                "namaKades": "Martianus Sembiring"
+            },
+            {
+                "idDesa": 179,
+                "namaDesa": "Ujung Labuhan",
+                "namaKades": "Firman Ginting"
+            },
+            {
+                "idDesa": 180,
+                "namaDesa": "Batu Rejo",
+                "namaKades": "Ekaninta Barus"
+            },
+            {
+                "idDesa": 181,
+                "namaDesa": "Bekukul",
+                "namaKades": "Kasta Sembiring"
+            },
+            {
+                "idDesa": 182,
+                "namaDesa": "Namo Mbaru",
+                "namaKades": "Isabella Tarigan"
+            },
+            {
+                "idDesa": 183,
+                "namaDesa": "Namorambe",
+                "namaKades": "Jon Filter Sembiring"
+            },
+            {
+                "idDesa": 184,
+                "namaDesa": "Rumah Keben",
+                "namaKades": "Melson Sembiring"
+            },
+            {
+                "idDesa": 185,
+                "namaDesa": "Suka Mulia Hilir",
+                "namaKades": "Amansah Pelawi"
+            },
+            {
+                "idDesa": 186,
+                "namaDesa": "Tangkahan",
+                "namaKades": "Horaman Saragih"
+            },
+            {
+                "idDesa": 187,
+                "namaDesa": "Tanjung Selamat",
+                "namaKades": "Elieser Tarigan"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 13,
+        "namaKecamatan": "Pagar Merbau",
+        "desa": [
+            {
+                "idDesa": 188,
+                "namaDesa": "Jati Rejo",
+                "namaKades": "Suparna"
+            },
+            {
+                "idDesa": 189,
+                "namaDesa": "Pagar Merbau I",
+                "namaKades": "Nani Agustini"
+            },
+            {
+                "idDesa": 190,
+                "namaDesa": "Pagar Merbau II",
+                "namaKades": "Agus Widodo"
+            },
+            {
+                "idDesa": 191,
+                "namaDesa": "Perbarakan",
+                "namaKades": "Muhammad Kariman"
+            },
+            {
+                "idDesa": 192,
+                "namaDesa": "Sidodadi Batu 8",
+                "namaKades": "Dugi Utomo"
+            },
+            {
+                "idDesa": 193,
+                "namaDesa": "Sidoharjo-I Pasar Miring",
+                "namaKades": "Santoso, S. Sos, Sh"
+            },
+            {
+                "idDesa": 194,
+                "namaDesa": "Suka Mandi Hilir",
+                "namaKades": "Bahrul Ilmi,S.Pd"
+            },
+            {
+                "idDesa": 195,
+                "namaDesa": "Suka Mandi Hulu",
+                "namaKades": "Abdullah"
+            },
+            {
+                "idDesa": 196,
+                "namaDesa": "Suka Mulia",
+                "namaKades": "Wagino"
+            },
+            {
+                "idDesa": 197,
+                "namaDesa": "Sumber Rejo",
+                "namaKades": "Samino"
+            },
+            {
+                "idDesa": 198,
+                "namaDesa": "Tanjung Garbus II",
+                "namaKades": "Arisandi"
+            },
+            {
+                "idDesa": 199,
+                "namaDesa": "Tanjung Garbus Kampung",
+                "namaKades": "Hardono"
+            },
+            {
+                "idDesa": 200,
+                "namaDesa": "Tanjung Mulia",
+                "namaKades": "Rusli"
+            },
+            {
+                "idDesa": 201,
+                "namaDesa": "Bandar Dolok",
+                "namaKades": "Muhammad Jais"
+            },
+            {
+                "idDesa": 202,
+                "namaDesa": "Purwodadi",
+                "namaKades": "Muhammad Ibrahim Harahap, SE"
+            },
+            {
+                "idDesa": 203,
+                "namaDesa": "Sidoharjo-I Jati Baru",
+                "namaKades": "Rakhmadsyah Putra Helmi Barus"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 14,
+        "namaKecamatan": "Pancur Batu",
+        "desa": [
+            {
+                "idDesa": 204,
+                "namaDesa": "Baru",
+                "namaKades": "Stevanus Tarigan, SE"
+            },
+            {
+                "idDesa": 205,
+                "namaDesa": "Durin Simbelang",
+                "namaKades": "Serasi Sembiring"
+            },
+            {
+                "idDesa": 206,
+                "namaDesa": "Durin Tonggal",
+                "namaKades": "Jakup Sembiring"
+            },
+            {
+                "idDesa": 207,
+                "namaDesa": "Hulu",
+                "namaKades": "Kasuma Candra Wijaya"
+            },
+            {
+                "idDesa": 208,
+                "namaDesa": "Perumnas Simalingkar",
+                "namaKades": "Serinawati Br. Sembiring"
+            },
+            {
+                "idDesa": 209,
+                "namaDesa": "Petampilen",
+                "namaKades": "Heri Saputra"
+            },
+            {
+                "idDesa": 210,
+                "namaDesa": "Sei Glugur",
+                "namaKades": "Jumino"
+            },
+            {
+                "idDesa": 211,
+                "namaDesa": "Tanjung Anom",
+                "namaKades": "Drs. Muslim, M.Pd"
+            },
+            {
+                "idDesa": 212,
+                "namaDesa": "Tuntungan I",
+                "namaKades": "Surya Darma Sembiring"
+            },
+            {
+                "idDesa": 213,
+                "namaDesa": "Tuntungan II",
+                "namaKades": "Ir. Sutrisman"
+            },
+            {
+                "idDesa": 214,
+                "namaDesa": "Lama",
+                "namaKades": "Nizar Laksamana Tarigan"
+            },
+            {
+                "idDesa": 215,
+                "namaDesa": "Suka Raya",
+                "namaKades": "Budi Santoso"
+            },
+            {
+                "idDesa": 216,
+                "namaDesa": "Salam Tani",
+                "namaKades": "Sri Ulina Br. Purba"
+            },
+            {
+                "idDesa": 217,
+                "namaDesa": "Durin Jangak",
+                "namaKades": "David Living Stone"
+            },
+            {
+                "idDesa": 218,
+                "namaDesa": "Namo Riam",
+                "namaKades": "Makna Persadanta"
+            },
+            {
+                "idDesa": 219,
+                "namaDesa": "Namo Rih",
+                "namaKades": "Andi Warista"
+            },
+            {
+                "idDesa": 220,
+                "namaDesa": "Namo Simpur",
+                "namaKades": "Darmanto"
+            },
+            {
+                "idDesa": 221,
+                "namaDesa": "Sembahe Baru",
+                "namaKades": "Kornelius Tarigan"
+            },
+            {
+                "idDesa": 222,
+                "namaDesa": "Sugau",
+                "namaKades": "Mulia Gurusinga"
+            },
+            {
+                "idDesa": 223,
+                "namaDesa": "Tengah",
+                "namaKades": "Eben Neser"
+            },
+            {
+                "idDesa": 224,
+                "namaDesa": "Tiang Layar",
+                "namaKades": "Arapenta"
+            },
+            {
+                "idDesa": 225,
+                "namaDesa": "Bintang Meriah",
+                "namaKades": "Oneng Sembiring"
+            },
+            {
+                "idDesa": 226,
+                "namaDesa": "Gunung Tinggi",
+                "namaKades": "Elya"
+            },
+            {
+                "idDesa": 227,
+                "namaDesa": "Namo Bintang",
+                "namaKades": "Ridwan"
+            },
+            {
+                "idDesa": 228,
+                "namaDesa": "Simalingkar A",
+                "namaKades": "Mulia Ginting"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 15,
+        "namaKecamatan": "Pantai Labu",
+        "desa": [
+            {
+                "idDesa": 229,
+                "namaDesa": "Bagan Serdang",
+                "namaKades": "Imran"
+            },
+            {
+                "idDesa": 230,
+                "namaDesa": "Binjai Bakung",
+                "namaKades": "Topan ,AmK., SE"
+            },
+            {
+                "idDesa": 231,
+                "namaDesa": "Denai Kuala",
+                "namaKades": "Swardi"
+            },
+            {
+                "idDesa": 232,
+                "namaDesa": "Denai Lama",
+                "namaKades": "Parnu, SE"
+            },
+            {
+                "idDesa": 233,
+                "namaDesa": "Denai Sarang Burung",
+                "namaKades": "Katimin, SE"
+            },
+            {
+                "idDesa": 234,
+                "namaDesa": "Kelambir",
+                "namaKades": "Sahrial, SE"
+            },
+            {
+                "idDesa": 235,
+                "namaDesa": "Paluh Sibaji",
+                "namaKades": "Nasri"
+            },
+            {
+                "idDesa": 236,
+                "namaDesa": "Pantai Labu Baru",
+                "namaKades": "Muhammad Azmi, SE"
+            },
+            {
+                "idDesa": 237,
+                "namaDesa": "Pantai Labu Pekan",
+                "namaKades": "Samsul Bahri"
+            },
+            {
+                "idDesa": 238,
+                "namaDesa": "Pematang Biara",
+                "namaKades": "Abdul Haris, SE"
+            },
+            {
+                "idDesa": 239,
+                "namaDesa": "Perkebunan Ramunia",
+                "namaKades": "Ngadino"
+            },
+            {
+                "idDesa": 240,
+                "namaDesa": "Ramunia I",
+                "namaKades": "Basri"
+            },
+            {
+                "idDesa": 241,
+                "namaDesa": "Ramunia II",
+                "namaKades": "Muliono"
+            },
+            {
+                "idDesa": 242,
+                "namaDesa": "Rantau Panjang",
+                "namaKades": "Muhammad Tahir"
+            },
+            {
+                "idDesa": 243,
+                "namaDesa": "Rugemiuk",
+                "namaKades": "Muliadi"
+            },
+            {
+                "idDesa": 244,
+                "namaDesa": "Tengah",
+                "namaKades": "Irwansyah"
+            },
+            {
+                "idDesa": 245,
+                "namaDesa": "Durian",
+                "namaKades": "Supiadi"
+            },
+            {
+                "idDesa": 246,
+                "namaDesa": "Kubah Sentang",
+                "namaKades": "Ihwan Hidayat"
+            },
+            {
+                "idDesa": 247,
+                "namaDesa": "Sei Tuan",
+                "namaKades": "Parningotan Marbun"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 16,
+        "namaKecamatan": "Patumbak",
+        "desa": [
+            {
+                "idDesa": 248,
+                "namaDesa": "Lantasan Lama",
+                "namaKades": "Mulkan"
+            },
+            {
+                "idDesa": 249,
+                "namaDesa": "Marindal I",
+                "namaKades": "Ir. Ardianto"
+            },
+            {
+                "idDesa": 250,
+                "namaDesa": "Marindal II",
+                "namaKades": "Jufri Antono"
+            },
+            {
+                "idDesa": 251,
+                "namaDesa": "Patumbak I",
+                "namaKades": "Irwansyah Lubis, SH"
+            },
+            {
+                "idDesa": 252,
+                "namaDesa": "Patumbak II",
+                "namaKades": "Edi Sucipto"
+            },
+            {
+                "idDesa": 253,
+                "namaDesa": "Patumbak Kampung",
+                "namaKades": "Ahmat Arifin"
+            },
+            {
+                "idDesa": 254,
+                "namaDesa": "Sigara-Gara",
+                "namaKades": "Safi'I Tarigan"
+            },
+            {
+                "idDesa": 255,
+                "namaDesa": "Lantasan Baru",
+                "namaKades": "Agustinus Ginting"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 17,
+        "namaKecamatan": "Percut Sei Tuan",
+        "desa": [
+            {
+                "idDesa": 256,
+                "namaDesa": "Bandar Khalipah",
+                "namaKades": "Suparyo, SH"
+            },
+            {
+                "idDesa": 257,
+                "namaDesa": "Bandar Klippa",
+                "namaKades": "Suripno,SH.MH"
+            },
+            {
+                "idDesa": 258,
+                "namaDesa": "Bandar Setia",
+                "namaKades": "Sugiato"
+            },
+            {
+                "idDesa": 259,
+                "namaDesa": "Cinta Rakyat",
+                "namaKades": "H. Adi Kustiono, S.Kp"
+            },
+            {
+                "idDesa": 260,
+                "namaDesa": "Kolam",
+                "namaKades": "Jupri Purwanto"
+            },
+            {
+                "idDesa": 261,
+                "namaDesa": "Laut Dendang",
+                "namaKades": "Supriadi"
+            },
+            {
+                "idDesa": 262,
+                "namaDesa": "Medan Estate",
+                "namaKades": "Asdat Lubis"
+            },
+            {
+                "idDesa": 263,
+                "namaDesa": "Pematang Lalang",
+                "namaKades": "Surung Panjaitan"
+            },
+            {
+                "idDesa": 264,
+                "namaDesa": "Percut",
+                "namaKades": "Asyhari Syah, S.Ag"
+            },
+            {
+                "idDesa": 265,
+                "namaDesa": "Saentis",
+                "namaKades": "Asmawito, S.Sos"
+            },
+            {
+                "idDesa": 266,
+                "namaDesa": "Sambirejo Timur",
+                "namaKades": "Mhd. Arifin"
+            },
+            {
+                "idDesa": 267,
+                "namaDesa": "Sampali",
+                "namaKades": "Muhammad Ruslan"
+            },
+            {
+                "idDesa": 268,
+                "namaDesa": "Sei Rotan",
+                "namaKades": "Suwarman"
+            },
+            {
+                "idDesa": 269,
+                "namaDesa": "Tanjung Rejo",
+                "namaKades": "Selamet"
+            },
+            {
+                "idDesa": 270,
+                "namaDesa": "Tanjung Selamat",
+                "namaKades": "Herman"
+            },
+            {
+                "idDesa": 271,
+                "namaDesa": "Tembung",
+                "namaKades": "Misman"
+            },
+            {
+                "idDesa": 272,
+                "namaDesa": "Amplas",
+                "namaKades": "Edi Purwanto"
+            },
+            {
+                "idDesa": 273,
+                "namaDesa": "Cinta Damai",
+                "namaKades": "Josta Josevina Tambunan, S.Pd"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 18,
+        "namaKecamatan": "Sibolangit",
+        "desa": [
+            {
+                "idDesa": 274,
+                "namaDesa": "Rambung Baru",
+                "namaKades": "Piman Tarigan,Drs"
+            },
+            {
+                "idDesa": 275,
+                "namaDesa": "Rumah Sumbul",
+                "namaKades": "Sobiran Sembiring"
+            },
+            {
+                "idDesa": 276,
+                "namaDesa": "Tambunan",
+                "namaKades": "Peryanto"
+            },
+            {
+                "idDesa": 277,
+                "namaDesa": "Bandar Baru",
+                "namaKades": "Bincar Martinus Sitepu, SH"
+            },
+            {
+                "idDesa": 278,
+                "namaDesa": "Betimus Mbaru",
+                "namaKades": "Matius Sembiring"
+            },
+            {
+                "idDesa": 279,
+                "namaDesa": "Bingkawan",
+                "namaKades": "Erik Estrada Tarigan"
+            },
+            {
+                "idDesa": 280,
+                "namaDesa": "Buah Nabar",
+                "namaKades": "Daud Gurusinga"
+            },
+            {
+                "idDesa": 281,
+                "namaDesa": "Bukum",
+                "namaKades": "Kombri Martinus"
+            },
+            {
+                "idDesa": 282,
+                "namaDesa": "Buluh Awar",
+                "namaKades": "Obet Bukit"
+            },
+            {
+                "idDesa": 283,
+                "namaDesa": "Cinta Rakyat",
+                "namaKades": "Ramlan Tarigan"
+            },
+            {
+                "idDesa": 284,
+                "namaDesa": "Durin Sirugun",
+                "namaKades": "Ngamanken Ginting"
+            },
+            {
+                "idDesa": 285,
+                "namaDesa": "Kuala",
+                "namaKades": "De Masmur Ginting"
+            },
+            {
+                "idDesa": 286,
+                "namaDesa": "Martelu",
+                "namaKades": "Ernalem Tarigan"
+            },
+            {
+                "idDesa": 287,
+                "namaDesa": "Negeri Gugung",
+                "namaKades": "Enda Temanta Sembiring"
+            },
+            {
+                "idDesa": 288,
+                "namaDesa": "Puang Aja",
+                "namaKades": "Jatendra Tarigan"
+            },
+            {
+                "idDesa": 289,
+                "namaDesa": "Rumah Kinangkung SP",
+                "namaKades": "Aprianto Tarigan"
+            },
+            {
+                "idDesa": 290,
+                "namaDesa": "Sala Bulan",
+                "namaKades": "Fery Septa Melody Bukit"
+            },
+            {
+                "idDesa": 291,
+                "namaDesa": "Sayum Sabah",
+                "namaKades": "Namaken Gurusinga"
+            },
+            {
+                "idDesa": 292,
+                "namaDesa": "Sembahe",
+                "namaKades": "Istipanus Ginting"
+            },
+            {
+                "idDesa": 293,
+                "namaDesa": "Sibolangit",
+                "namaKades": "Samiranta Ketaren"
+            },
+            {
+                "idDesa": 294,
+                "namaDesa": "Sikeben",
+                "namaKades": "Rakutta Sembiring"
+            },
+            {
+                "idDesa": 295,
+                "namaDesa": "Suka Maju",
+                "namaKades": "Karlo Pandia"
+            },
+            {
+                "idDesa": 296,
+                "namaDesa": "Tanjung Beringin",
+                "namaKades": "Randy Arfanda"
+            },
+            {
+                "idDesa": 297,
+                "namaDesa": "Batu Layang",
+                "namaKades": "Dipa Ben Kharisma Tarigan, SH"
+            },
+            {
+                "idDesa": 298,
+                "namaDesa": "Batu Mbelin",
+                "namaKades": "Resna Ketaren"
+            },
+            {
+                "idDesa": 299,
+                "namaDesa": "Bengkurung",
+                "namaKades": "Mulo Sembiring"
+            },
+            {
+                "idDesa": 300,
+                "namaDesa": "Ketangkuhen",
+                "namaKades": "Jois Bangun"
+            },
+            {
+                "idDesa": 301,
+                "namaDesa": "Rumah Pil-Pil",
+                "namaKades": "Elvianus Agusta Ginting"
+            },
+            {
+                "idDesa": 302,
+                "namaDesa": "Suka Makmur",
+                "namaKades": "Robianus Barus"
+            },
+            {
+                "idDesa": 303,
+                "namaDesa": "Ujung Deleng",
+                "namaKades": "Serasi Sinulingga"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 19,
+        "namaKecamatan": "Sinembah Tanjung Muda Hilir",
+        "desa": [
+            {
+                "idDesa": 304,
+                "namaDesa": "Juma Tombak",
+                "namaKades": "Ponijo"
+            },
+            {
+                "idDesa": 305,
+                "namaDesa": "Kuta Jurung",
+                "namaKades": "Abadi Sitepu"
+            },
+            {
+                "idDesa": 306,
+                "namaDesa": "Lau Barus Baru",
+                "namaKades": "Supriadi"
+            },
+            {
+                "idDesa": 307,
+                "namaDesa": "Siguci",
+                "namaKades": "Rahman"
+            },
+            {
+                "idDesa": 308,
+                "namaDesa": "Sumbul",
+                "namaKades": "Ridwan Gurusinga"
+            },
+            {
+                "idDesa": 309,
+                "namaDesa": "Tadukan Raga",
+                "namaKades": "Muhammad Dermawan"
+            },
+            {
+                "idDesa": 310,
+                "namaDesa": "Gunung Rintih",
+                "namaKades": "Neken Andreas Tarigan"
+            },
+            {
+                "idDesa": 311,
+                "namaDesa": "Lau Rempak",
+                "namaKades": "Emberguh Ginting"
+            },
+            {
+                "idDesa": 312,
+                "namaDesa": "Limau Mungkur",
+                "namaKades": "Malem Pagi Barus"
+            },
+            {
+                "idDesa": 313,
+                "namaDesa": "Penungkiren",
+                "namaKades": "Mardan Tarigan"
+            },
+            {
+                "idDesa": 314,
+                "namaDesa": "Rambai",
+                "namaKades": "Edisah Putra Sembiring"
+            },
+            {
+                "idDesa": 315,
+                "namaDesa": "Tala Peta",
+                "namaKades": "Manase Barus"
+            },
+            {
+                "idDesa": 316,
+                "namaDesa": "Talun Kenas",
+                "namaKades": "Janami Munthe"
+            },
+            {
+                "idDesa": 317,
+                "namaDesa": "Lau Rakit",
+                "namaKades": "Adininta Barus"
+            },
+            {
+                "idDesa": 318,
+                "namaDesa": "Negara Beringin",
+                "namaKades": "Timbul Tarigan, SE"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 20,
+        "namaKecamatan": "Sinembah Tanjung Muda Hulu",
+        "desa": [
+            {
+                "idDesa": 319,
+                "namaDesa": "Durin IV Mbelang",
+                "namaKades": "Yanta Sitepu"
+            },
+            {
+                "idDesa": 320,
+                "namaDesa": "Rumah Lengo",
+                "namaKades": "Edi Sejahtera Barus"
+            },
+            {
+                "idDesa": 321,
+                "namaDesa": "Tanah Gara Hulu",
+                "namaKades": "M. Syadli  Sinaga"
+            },
+            {
+                "idDesa": 322,
+                "namaDesa": "Liang Pematang",
+                "namaKades": "Restoni Tarigan"
+            },
+            {
+                "idDesa": 323,
+                "namaDesa": "Rangit-Git",
+                "namaKades": "Efendi Barus"
+            },
+            {
+                "idDesa": 324,
+                "namaDesa": "Sibunga-Bunga Hilir",
+                "namaKades": "Jemat Purba"
+            },
+            {
+                "idDesa": 325,
+                "namaDesa": "Bah Bah Buntu",
+                "namaKades": "Agus Tarigan"
+            },
+            {
+                "idDesa": 326,
+                "namaDesa": "Durian Tinggung",
+                "namaKades": "Natanail Tarigan"
+            },
+            {
+                "idDesa": 327,
+                "namaDesa": "Gunung Manumpak B",
+                "namaKades": "Jonmedi Abraham Saragih"
+            },
+            {
+                "idDesa": 328,
+                "namaDesa": "Kuta Mbelin",
+                "namaKades": "Pikir Ginting"
+            },
+            {
+                "idDesa": 329,
+                "namaDesa": "Liang Muda",
+                "namaKades": "Lusi Br Ginting"
+            },
+            {
+                "idDesa": 330,
+                "namaDesa": "Rumah Rih",
+                "namaKades": "Ben Bernabas Barus"
+            },
+            {
+                "idDesa": 331,
+                "namaDesa": "Rumah Sumbul",
+                "namaKades": "Makmur Barus"
+            },
+            {
+                "idDesa": 332,
+                "namaDesa": "Tanjung Muda",
+                "namaKades": "Tarjan Tarigan"
+            },
+            {
+                "idDesa": 333,
+                "namaDesa": "Tanjung Timur",
+                "namaKades": "Jusuf Ginting"
+            },
+            {
+                "idDesa": 334,
+                "namaDesa": "Tiga Juhar",
+                "namaKades": "Ir. Daniel Barus"
+            },
+            {
+                "idDesa": 335,
+                "namaDesa": "Gunung Manumpak A",
+                "namaKades": "Mena Ginting"
+            },
+            {
+                "idDesa": 336,
+                "namaDesa": "Sipinggan",
+                "namaKades": "Iwandi Purba"
+            },
+            {
+                "idDesa": 337,
+                "namaDesa": "Tanjung Bampu",
+                "namaKades": "Ismail Tarigan"
+            },
+            {
+                "idDesa": 338,
+                "namaDesa": "Tanjung Raja",
+                "namaKades": "Alasen Barus"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 21,
+        "namaKecamatan": "Sunggal",
+        "desa": [
+            {
+                "idDesa": 339,
+                "namaDesa": "Helvetia",
+                "namaKades": "Guntur Sutrisno Limbong, SH"
+            },
+            {
+                "idDesa": 340,
+                "namaDesa": "Lalang",
+                "namaKades": "Indrayani Nasution, SH"
+            },
+            {
+                "idDesa": 341,
+                "namaDesa": "Medan Krio",
+                "namaKades": "R. Chairul Azmi"
+            },
+            {
+                "idDesa": 342,
+                "namaDesa": "Mulio Rejo",
+                "namaKades": "Hj. Ir. Nelly Masril"
+            },
+            {
+                "idDesa": 343,
+                "namaDesa": "Paya Geli",
+                "namaKades": "Hardi Ismanto"
+            },
+            {
+                "idDesa": 344,
+                "namaDesa": "Puji Mulio",
+                "namaKades": "Armadaiyah"
+            },
+            {
+                "idDesa": 345,
+                "namaDesa": "Purwodadi",
+                "namaKades": "Sugiatno"
+            },
+            {
+                "idDesa": 346,
+                "namaDesa": "Sei Beras Sekata",
+                "namaKades": "Chandra Yudistira Hasibuan, S.Sos."
+            },
+            {
+                "idDesa": 347,
+                "namaDesa": "Sei Mencirim",
+                "namaKades": "Sugeng Suheri"
+            },
+            {
+                "idDesa": 348,
+                "namaDesa": "Sei Semayang",
+                "namaKades": "Abd. Razak"
+            },
+            {
+                "idDesa": 349,
+                "namaDesa": "Serba Jadi",
+                "namaKades": "Marlon Purba"
+            },
+            {
+                "idDesa": 350,
+                "namaDesa": "Suka Maju",
+                "namaKades": "Rahmat Hidayat Sembiring"
+            },
+            {
+                "idDesa": 351,
+                "namaDesa": "Sm Diski",
+                "namaKades": "Sunaryo"
+            },
+            {
+                "idDesa": 352,
+                "namaDesa": "Sunggal Kanan",
+                "namaKades": "Ramlan"
+            },
+            {
+                "idDesa": 353,
+                "namaDesa": "Tanjung Selamat",
+                "namaKades": "Sapi'i Andinata"
+            },
+            {
+                "idDesa": 354,
+                "namaDesa": "Tanjung Gusta",
+                "namaKades": "Kawibowo"
+            },
+            {
+                "idDesa": 355,
+                "namaDesa": "Telaga Sari",
+                "namaKades": "Ipobili Budiman Sibuea"
+            }
+        ]
+    },
+    {
+        "idKecamatan": 22,
+        "namaKecamatan": "Tanjung Morawa",
+        "desa": [
+            {
+                "idDesa": 356,
+                "namaDesa": "Bangun Rejo",
+                "namaKades": "Misno"
+            },
+            {
+                "idDesa": 357,
+                "namaDesa": "Bangun Sari",
+                "namaKades": "Muhammad Rifai"
+            },
+            {
+                "idDesa": 358,
+                "namaDesa": "Bangun Sari Baru",
+                "namaKades": "Pendy Pulungan, S.Sos"
+            },
+            {
+                "idDesa": 359,
+                "namaDesa": "Buntu Bedimbar",
+                "namaKades": "Musmulyadi"
+            },
+            {
+                "idDesa": 360,
+                "namaDesa": "Dagang Kerawan",
+                "namaKades": "Muhamad Nur"
+            },
+            {
+                "idDesa": 361,
+                "namaDesa": "Dalu Sepuluh B",
+                "namaKades": "Wantoro"
+            },
+            {
+                "idDesa": 362,
+                "namaDesa": "Limau Manis",
+                "namaKades": "Dodi Syahputra"
+            },
+            {
+                "idDesa": 363,
+                "namaDesa": "Medan Senembah",
+                "namaKades": "Jasri"
+            },
+            {
+                "idDesa": 364,
+                "namaDesa": "Naga Timbul",
+                "namaKades": "Terimo"
+            },
+            {
+                "idDesa": 365,
+                "namaDesa": "Sungai Merah",
+                "namaKades": "Supriyansah"
+            },
+            {
+                "idDesa": 366,
+                "namaDesa": "Tanjung Baru",
+                "namaKades": "Khairi Azman Ginting"
+            },
+            {
+                "idDesa": 367,
+                "namaDesa": "Tanjung Morawa A",
+                "namaKades": "Juliadi, S.Sos"
+            },
+            {
+                "idDesa": 368,
+                "namaDesa": "Tanjung Morawa B",
+                "namaKades": "Nazarianti"
+            },
+            {
+                "idDesa": 369,
+                "namaDesa": "Tanjung Mulia",
+                "namaKades": "Borkat"
+            },
+            {
+                "idDesa": 370,
+                "namaDesa": "Telaga Sari",
+                "namaKades": "Indra Sembada, ST"
+            },
+            {
+                "idDesa": 371,
+                "namaDesa": "Wonosari",
+                "namaKades": "Suparman"
+            },
+            {
+                "idDesa": 372,
+                "namaDesa": "Aek Pancur",
+                "namaKades": "Suyitno"
+            },
+            {
+                "idDesa": 373,
+                "namaDesa": "Bandar Labuhan",
+                "namaKades": "Hajeman"
+            },
+            {
+                "idDesa": 374,
+                "namaDesa": "Dagang Klambir",
+                "namaKades": "H.Alfian, SH"
+            },
+            {
+                "idDesa": 375,
+                "namaDesa": "Dalu Sepuluh A",
+                "namaKades": "Sugianto,SH"
+            },
+            {
+                "idDesa": 376,
+                "namaDesa": "Lengau Seprang",
+                "namaKades": "Suheriyanto"
+            },
+            {
+                "idDesa": 377,
+                "namaDesa": "Penara Kebun",
+                "namaKades": "Asmawati"
+            },
+            {
+                "idDesa": 378,
+                "namaDesa": "Punden Rejo",
+                "namaKades": "Misno"
+            },
+            {
+                "idDesa": 379,
+                "namaDesa": "Perdamean",
+                "namaKades": "Toni Hasudungan Sitorus"
+            },
+            {
+                "idDesa": 380,
+                "namaDesa": "Ujung Serdang",
+                "namaKades": "Jenda Inganta Barus"
+            }
+        ]
+    }
+]

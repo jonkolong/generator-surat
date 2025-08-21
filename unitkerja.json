@@ -1,0 +1,762 @@
+[
+  {
+    "id": 1,
+    "unitKerja": "Sekretariat Daerah",
+    "subUnitKerja": [
+      "Sekretariat Daerah",
+      "Bagian Administrasi Pembangunan",
+      "Bagian Hukum",
+      "Bagian Kesejahteraan Rakyat",
+      "Bagian Organisasi",
+      "Bagian Pengadaan Barang dan Jasa",
+      "Bagian Perekonomian dan SDA",
+      "Bagian Perencanaan dan Keuangan",
+      "Bagian Protokol dan Komunikasi Pimpinan",
+      "Bagian Tata Pemerintahan",
+      "Bagian Umum"
+    ]
+  },
+  {
+    "id": 2,
+    "unitKerja": "Sekretariat Dewan Perwakilan Rakyat Daerah",
+    "subUnitKerja": "Sekretariat Dewan Perwakilan Rakyat Daerah"
+  },
+  {
+    "id": 3,
+    "unitKerja": "Badan Perencanaan Pembangunan Daerah, Penelitian dan Pengembangan ",
+    "subUnitKerja": "Badan Perencanaan Pembangunan Daerah, Penelitian dan Pengembangan "
+  },
+  {
+    "id": 4,
+    "unitKerja": "Badan Kepegawaian dan Pengembangan Sumber Daya Manusia",
+    "subUnitKerja": "Badan Kepegawaian dan Pengembangan Sumber Daya Manusia"
+  },
+  {
+    "id": 5,
+    "unitKerja": "Badan Pendapatan Daerah",
+    "subUnitKerja": "Badan Pendapatan Daerah"
+  },
+  {
+    "id": 6,
+    "unitKerja": "Badan Keuangan dan Aset Daerah",
+    "subUnitKerja": "Badan Keuangan dan Aset Daerah"
+  },
+  {
+    "id": 7,
+    "unitKerja": "Badan Kesatuan Bangsa dan Politik",
+    "subUnitKerja": "Badan Kesatuan Bangsa dan Politik"
+  },
+  {
+    "id": 8,
+    "unitKerja": "Badan Penanggulangan Bencana Daerah",
+    "subUnitKerja": "Badan Penanggulangan Bencana Daerah"
+  },
+  {
+    "id": 9,
+    "unitKerja": "Dinas Kesehatan",
+    "subUnitKerja": [
+      "Dinas Kesehatan",
+      "Puskesmas Araskabu",
+      "Puskesmas Bandar Baru",
+      "Puskesmas Bandar Dolok",
+      "Puskesmas Bandar Khalifah",
+      "Puskesmas Bangun Purba",
+      "Puskesmas Batang Kuis",
+      "Puskesmas Biru-Biru",
+      "Puskesmas Dalu Sepuluh",
+      "Puskesmas Delitua",
+      "Puskesmas Galang",
+      "Puskesmas Gunung Meriah",
+      "Puskesmas Hamparan Perak",
+      "Puskesmas Karang Anyer",
+      "Puskesmas Kenangan",
+      "Puskesmas Kota Datar",
+      "Puskesmas Kutalimbaru",
+      "Puskesmas Labuhan Deli",
+      "Puskesmas Lubuk Pakam",
+      "Puskesmas Mulyorejo",
+      "Puskesmas Namorambe",
+      "Puskesmas Pagar Jati",
+      "Puskesmas Pancur Batu",
+      "Puskesmas Pantai Labu",
+      "Puskesmas Patumbak",
+      "Puskesmas Pematang Johar",
+      "Puskesmas Petumbukan",
+      "Puskesmas Sei Mencirim",
+      "Puskesmas Sei Semayang",
+      "Puskesmas Sibolangit",
+      "Puskesmas Sukaraya",
+      "Puskesmas Talun Kenas",
+      "Puskesmas Tanjung Morawa",
+      "Puskesmas Tanjung Rejo",
+      "Puskesmas Tiga Juhar"
+    ]
+  },
+  {
+    "id": 10,
+    "unitKerja": "Dinas Perindustrian dan Perdagangan",
+    "subUnitKerja": "Dinas Perindustrian dan Perdagangan"
+  },
+  {
+    "id": 11,
+    "unitKerja": "Dinas Kebudayaan, Pemuda dan Olahraga serta Pariwisata",
+    "subUnitKerja": "Dinas Kebudayaan, Pemuda dan Olahraga serta Pariwisata"
+  },
+  {
+    "id": 12,
+    "unitKerja": "Dinas Kependudukan dan Pencatatan Sipil",
+    "subUnitKerja": "Dinas Kependudukan dan Pencatatan Sipil"
+  },
+  {
+    "id": 13,
+    "unitKerja": "Dinas Pemberdayaan Perempuan dan Perlindungan Anak serta Pengendalian Penduduk dan Keluarga Berencana",
+    "subUnitKerja": "Dinas Pemberdayaan Perempuan dan Perlindungan Anak serta Pengendalian Penduduk dan Keluarga Berencana"
+  },
+  {
+    "id": 14,
+    "unitKerja": "Dinas Sosial",
+    "subUnitKerja": "Dinas Sosial"
+  },
+  {
+    "id": 15,
+    "unitKerja": "Dinas Komunikasi, Informatika, Statistik dan Persandian",
+    "subUnitKerja": "Dinas Komunikasi, Informatika, Statistik dan Persandian"
+  },
+  {
+    "id": 16,
+    "unitKerja": "Dinas Pertanian",
+    "subUnitKerja": "Dinas Pertanian"
+  },
+  {
+    "id": 17,
+    "unitKerja": "Dinas Ketahanan Pangan",
+    "subUnitKerja": "Dinas Ketahanan Pangan"
+  },
+  {
+    "id": 18,
+    "unitKerja": "Dinas Perpustakaan dan Arsip",
+    "subUnitKerja": "Dinas Perpustakaan dan Arsip"
+  },
+  {
+    "id": 19,
+    "unitKerja": "Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu",
+    "subUnitKerja": "Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu"
+  },
+  {
+    "id": 20,
+    "unitKerja": "Dinas Pemadam Kebakaran dan Penyelamatan",
+    "subUnitKerja": "Dinas Pemadam Kebakaran dan Penyelamatan"
+  },
+  {
+    "id": 21,
+    "unitKerja": "Dinas Pendidikan",
+    "subUnitKerja": "Dinas Pendidikan"
+  },
+  {
+    "id": 22,
+    "unitKerja": "Dinas Koperasi dan Usaha Kecil Menengah",
+    "subUnitKerja": "Dinas Koperasi dan Usaha Kecil Menengah"
+  },
+  {
+    "id": 23,
+    "unitKerja": "Dinas Perumahan dan Kawasan Permukiman serta Pertanahan",
+    "subUnitKerja": "Dinas Perumahan dan Kawasan Permukiman serta Pertanahan"
+  },
+  {
+    "id": 24,
+    "unitKerja": "Dinas Cipta Karya dan Tata Ruang",
+    "subUnitKerja": "Dinas Cipta Karya dan Tata Ruang"
+  },
+  {
+    "id": 25,
+    "unitKerja": "Dinas Sumber Daya Air, Bina Marga dan Bina Konstruksi",
+    "subUnitKerja": "Dinas Sumber Daya Air, Bina Marga dan Bina Konstruksi"
+  },
+  {
+    "id": 26,
+    "unitKerja": "Dinas Ketenagakerjaan",
+    "subUnitKerja": "Dinas Ketenagakerjaan"
+  },
+  {
+    "id": 27,
+    "unitKerja": "Dinas Perikanan",
+    "subUnitKerja": "Dinas Perikanan"
+  },
+  {
+    "id": 28,
+    "unitKerja": "Dinas Perhubungan",
+    "subUnitKerja": "Dinas Perhubungan"
+  },
+  {
+    "id": 29,
+    "unitKerja": "Dinas Pemberdayaan Masyarakat dan Desa",
+    "subUnitKerja": "Dinas Pemberdayaan Masyarakat dan Desa"
+  },
+  {
+    "id": 30,
+    "unitKerja": "Dinas Lingkungan Hidup",
+    "subUnitKerja": "Dinas Lingkungan Hidup"
+  },
+  {
+    "id": 31,
+    "unitKerja": "Satuan Polisi Pamong Praja",
+    "subUnitKerja": "Satuan Polisi Pamong Praja"
+  },
+  {
+    "id": 32,
+    "unitKerja": "RSUD H. Amri Tambunan",
+    "subUnitKerja": "RSUD H. Amri Tambunan"
+  },
+  {
+    "id": 33,
+    "unitKerja": "Kecamatan Bangun Purba",
+    "subUnitKerja": [
+      "Kecamatan Bangun Purba",
+	  "Desa Bah Balua",
+      "Desa Bah Perak",
+      "Desa Bandar Gunung",
+      "Desa Bandar Meriah",
+      "Desa Bangun Purba",
+      "Desa Bangun Purba Tengah",
+      "Desa Bagerpang",
+      "Desa Batu Gingging",
+      "Desa Batu Rata",
+      "Desa Cimahe",
+      "Desa Damak Maliho",
+      "Desa Greahan",
+      "Desa Mabar",
+      "Desa Marombun Barat",
+      "Desa Marombun Ujung Jawi",
+      "Desa Perguruan",
+      "Desa Rumah Deleng",
+      "Desa Sialang",
+      "Desa Sibaganding",
+      "Desa Sukaluwei",
+      "Desa Tanjung Purba",
+      "Desa Ujung Rambe",
+      "Desa Urung Ganjang"
+    ]
+  },
+  {
+    "id": 34,
+    "unitKerja": "Kecamatan Batang Kuis",
+    "subUnitKerja": [
+      "Kecamatan Batang Kuis",
+	  "Desa Bakaran Batu",
+      "Desa Baru",
+      "Desa Batang Kuis Pekan",
+      "Desa Bintang Meriah",
+      "Desa Mesjid",
+      "Desa Paya Gambar",
+      "Desa Sena",
+      "Desa Sidodadi",
+      "Desa Sugiharjo",
+      "Desa Tanjung Sari",
+      "Desa Tumpatan Nibung"
+    ]
+  },
+  {
+    "id": 35,
+    "unitKerja": "Kecamatan Beringin",
+    "subUnitKerja": [
+      "Kecamatan Beringin",
+	  "Desa Aras Kabu",
+      "Desa Beringin",
+      "Desa Emplasmen Kuala Namu",
+      "Desa Karang Anyar",
+      "Desa Pasar V Kebun Kelapa",
+      "Desa Pasar VI Kuala Namu",
+      "Desa Serdang",
+      "Desa Sidodadi Ramunia",
+      "Desa Sidourip",
+      "Desa Sidoarjo II Ramunia",
+      "Desa Tumpatan"
+    ]
+  },
+  {
+    "id": 36,
+    "unitKerja": "Kecamatan Biru-Biru",
+    "subUnitKerja": [
+      "Kecamatan Biru-Biru",
+	  "Desa Aji Baho",
+      "Desa Biru-Biru",
+      "Desa Candi Rejo",
+      "Desa Kampung Selamat",
+      "Desa Kuala Dekah",
+      "Desa Kuta Mulyo",
+      "Desa Madinding Julu",
+      "Desa Mbaruai",
+      "Desa Namo Suro Baru",
+      "Desa Namo Tualang",
+      "Desa Penen",
+      "Desa Per Ria-Ria",
+      "Desa Rumah Gerat",
+      "Desa Sari Laba Jahe",
+      "Desa Sidodadi",
+      "Desa Sidomulyo",
+      "Desa Tanjung Sena"
+    ]
+  },
+  {
+    "id": 37,
+    "unitKerja": "Kecamatan Deli Tua",
+    "subUnitKerja": [
+      "Kecamatan Deli Tua",
+      "Kelurahan Deli Tua",
+      "Kelurahan Deli Tua Barat",
+      "Kelurahan Deli Tua Timur",
+      "Desa Kedai Durian",
+      "Desa Mekar Sari",
+      "Desa Suka Makmur"
+    ]
+  },
+  {
+    "id": 38,
+    "unitKerja": "Kecamatan Gunung Meriah",
+    "subUnitKerja": [
+      "Kecamatan Gunung Meriah",
+	  "Desa Bintang Meriah",
+      "Desa Gunung Meriah",
+      "Desa Gunung Paribuan",
+      "Desa Gunung Seribu",
+      "Desa Gunung Sinembah",
+      "Desa Kuta Bayu",
+      "Desa Kuta Tengah",
+      "Desa Marjandi Pematang",
+      "Desa Marjandi Tongah",
+      "Desa Pekan Gunung Meriah",
+      "Desa Simempar",
+      "Desa Ujung Meriah"
+    ]
+  },
+  {
+    "id": 39,
+    "unitKerja": "Kecamatan Galang",
+    "subUnitKerja": [
+      "Kecamatan Galang",
+	  "Kelurahan Galang Kota",
+	  "Desa Bandar Kuala",
+      "Desa Baru Titi Besi",
+      "Desa Batu Lokong",
+      "Desa Galang Barat",
+      "Desa Galang Suka",
+      "Desa Jaharun A",
+      "Desa Jaharun B",
+      "Desa Juhar Baru",
+      "Desa Kelapa Satu",
+      "Desa Kotangan",
+      "Desa Kotasari",
+      "Desa Kramat Gajah",
+      "Desa Naga Rejo",
+      "Desa Paku",
+      "Desa Paya Itik",
+      "Desa Paya Kuda",
+      "Desa Paya Sampir",
+      "Desa Petangguhan",
+      "Desa Petumbukan",
+      "Desa Pisang Pala",
+      "Desa Pulau Tagor Baru",
+      "Desa Sei Karang",
+      "Desa Sei Putih",
+      "Desa Tanah Abang",
+      "Desa Tanah Merah",
+      "Desa Tanjung Gusti",
+      "Desa Tanjung Siporkis",
+      "Desa Timbang Deli"
+    ]
+  },
+  {
+    "id": 40,
+    "unitKerja": "Kecamatan Hamparan Perak",
+    "subUnitKerja": [
+      "Kecamatan Hamparan Perak",
+	  "Desa Bulu Cina",
+      "Desa Hamparan Perak",
+      "Desa Kampung Lama",
+      "Desa Klambir",
+      "Desa Klumpang Kampung",
+      "Desa Klumpang Kebun",
+      "Desa Kota Datar",
+      "Desa Kota Rantang",
+      "Desa Paluh Kurau",
+      "Desa Paluh Manan",
+      "Desa Paya Bakung",
+      "Desa Selemak",
+      "Desa Sialang Muda",
+      "Desa Sungai Baharu",
+      "Desa Tandam Hilir Dua",
+      "Desa Tandam Hilir Satu",
+      "Desa Tandam Hulu Dua",
+      "Desa Tandam Hulu Satu"
+    ]
+  },
+  {
+    "id": 41,
+    "unitKerja": "Kecamatan Kutalimbaru",
+    "subUnitKerja": [
+      "Kecamatan Kutalimbaru",
+	  "Desa Kuala Lau Bicik",
+      "Desa Kuta Limbaru",
+      "Desa Lau Bakeri",
+      "Desa Namo Mirik",
+      "Desa Namo Rube Julu",
+      "Desa Pasar X",
+      "Desa Perpanden",
+      "Desa Sampe Cita",
+      "Desa Sawit Rejo",
+      "Desa Sei Mencirim",
+      "Desa Silebo Lebo",
+      "Desa Suka Dame",
+      "Desa Suka Makmur",
+      "Desa Suka Rende"
+    ]
+  },
+  {
+    "id": 42,
+    "unitKerja": "Kecamatan Labuhan Deli",
+    "subUnitKerja": [
+      "Kecamatan Labuhan Deli",
+      "Desa Helvetia",
+      "Desa Karang Gading",
+      "Desa Manunggal",
+      "Desa Pematang Johar",
+      "Desa Telaga Tujuh"
+    ]
+  },
+  {
+    "id": 43,
+    "unitKerja": "Kecamatan Lubuk Pakam",
+    "subUnitKerja": [
+      "Kecamatan Lubuk Pakam",
+	  "Kelurahan Cemara",
+      "Kelurahan Lubuk Pakam I-II",
+      "Kelurahan Lubuk Pakam Pekan",
+      "Kelurahan Lubuk Pakam III",
+      "Kelurahan Paluh Kemiri",
+      "Kelurahan Petapahan",
+      "Kelurahan Syahmad",
+      "Desa Bakaran Batu",
+      "Desa Pagar Jati",
+      "Desa Pagar Merbau III",
+      "Desa Pasar Melintang",
+      "Desa Sekip",
+      "Desa Suka Mandi Hilir",
+      "Desa Suka Mandi Hulu",
+      "Desa Sumber Rejo",
+      "Desa Tanjung Garbus I"
+    ]
+  },
+  {
+    "id": 44,
+    "unitKerja": "Kecamatan Namorambe",
+    "subUnitKerja": [
+      "Kecamatan Namorambe",
+	  "Desa Batu Gemuk",
+      "Desa Batu Mbelin",
+      "Desa Batu Penjemuran",
+      "Desa Batu Rejo",
+      "Desa Bekukul",
+      "Desa Cinta Rakyat",
+      "Desa Deli Tua",
+      "Desa Gunung Berita",
+      "Desa Gunung Kelawas",
+      "Desa Jaba",
+      "Desa Jati Kesuma",
+      "Desa Kuta Tengah",
+      "Desa Kuta Tualah",
+      "Desa Kwala Simeme",
+      "Desa Lau Mulgab",
+      "Desa Lubang Ido",
+      "Desa Namo Batang",
+      "Desa Namo Landur",
+      "Desa Namo Mbaru",
+      "Desa Namo Mbelin",
+      "Desa Namo Pakam",
+      "Desa Namo Pinang",
+      "Desa Rimo Mungkur",
+      "Desa Rumah Keben",
+      "Desa Rumah Mbacang",
+      "Desa Salang Tungir",
+      "Desa Silue Lue",
+      "Desa Sudirejo",
+      "Desa Suka Mulia Hilir",
+      "Desa Suka Mulia Hulu",
+      "Desa Tangkahan",
+      "Desa Tanjung Selamat",
+      "Desa Timbang Lawan",
+      "Desa Ujung Labuhan",
+      "Desa Uruk Gedang"
+    ]
+  },
+  {
+    "id": 45,
+    "unitKerja": "Kecamatan Pagar Merbau",
+    "subUnitKerja": [
+      "Kecamatan Pagar Merbau",
+	  "Desa Bandar Dolok",
+      "Desa Jati Baru",
+      "Desa Jati Rejo",
+      "Desa Pagar Merbau I",
+      "Desa Pagar Merbau II",
+      "Desa Pasar Miring",
+      "Desa Perbarakan",
+      "Desa Purwodadi",
+      "Desa Sidodadi Batu 8",
+      "Desa Sukamandi Hilir",
+      "Desa Sukamandi Hulu",
+      "Desa Sukamulia",
+      "Desa Sumberejo",
+      "Desa Tanjung Garbus II",
+      "Desa Tanjung Garbus Kampung",
+      "Desa Tanjung Mulia"
+    ]
+  },
+  {
+    "id": 46,
+    "unitKerja": "Kecamatan Pancur Batu",
+    "subUnitKerja": [
+      "Kecamatan Pancur Batu",
+	  "Desa Baru",
+      "Desa Bintang Meriah",
+      "Desa Durian Jangak",
+      "Desa Durin Simbelang",
+      "Desa Durin Tonggal",
+      "Desa Gunung Tinggi",
+      "Desa Hulu",
+      "Desa Lama",
+      "Desa Namo Bintang",
+      "Desa Namo Riam",
+      "Desa Namo Rih",
+      "Desa Namo Simpur",
+      "Desa Pertampilen",
+      "Desa Perumnas Simalingkar",
+      "Desa Salam Tani",
+      "Desa Sei Glugur",
+      "Desa Sembahe Baru",
+      "Desa Simalingkar A",
+      "Desa Sugau",
+      "Desa Suka Raya",
+      "Desa Tanjung Anom",
+      "Desa Tengah",
+      "Desa Tiang Layar",
+      "Desa Tuntungan I",
+      "Desa Tuntungan II"
+    ]
+  },
+  {
+    "id": 47,
+    "unitKerja": "Kecamatan Pantai Labu",
+    "subUnitKerja": [
+      "Kecamatan Pantai Labu",
+	  "Desa Bagan Serdang",
+      "Desa Binjai Bakung",
+      "Desa Denai Kuala",
+      "Desa Denai Lama",
+      "Desa Denai Sarang Burung",
+      "Desa Durian",
+      "Desa Kelambir",
+      "Desa Kubah Sentang",
+      "Desa Paluh Sibaji",
+      "Desa Pantai Labu Baru",
+      "Desa Pantai Labu Pekan",
+      "Desa Pematang Biara",
+      "Desa Perkebunan Ramunia",
+      "Desa Ramunia I",
+      "Desa Ramunia II",
+      "Desa Rantau Panjang",
+      "Desa Rugemuk",
+      "Desa Sei Tuan",
+      "Desa Tengah"
+    ]
+  },
+  {
+    "id": 48,
+    "unitKerja": "Kecamatan Patumbak",
+    "subUnitKerja": [
+      "Kecamatan Patumbak",
+	  "Desa Lantasan Baru",
+      "Desa Lantasan Lama",
+      "Desa Marindal I",
+      "Desa Marindal II",
+      "Desa Patumbak I",
+      "Desa Patumbak II",
+      "Desa Patumbak Kampung",
+      "Desa Sigara-gara"
+    ]
+  },
+  {
+    "id": 49,
+    "unitKerja": "Kecamatan Percut Sei Tuan",
+    "subUnitKerja": [
+      "Kecamatan Percut Sei Tuan",
+	  "Kelurahan Kenangan",
+      "Kelurahan Kenangan Baru",
+	  "Desa Amplas",
+      "Desa Bandar Klippa",
+      "Desa Bandar Khalipah",
+      "Desa Bandar Setia",
+      "Desa Cinta Damai",
+      "Desa Cinta Rakyat",
+      "Desa Kolam",
+      "Desa Lau Dendang",
+      "Desa Medan Estate",
+      "Desa Pematang Lalang",
+      "Desa Percut",
+      "Desa Saentis",
+      "Desa Sampali",
+      "Desa Sei Rotan",
+      "Desa Sumber Rejo Timur",
+      "Desa Tanjung Selamat",
+      "Desa Tanjung Rejo",
+      "Desa Tembung"
+    ]
+  },
+  {
+    "id": 50,
+    "unitKerja": "Kecamatan Sibolangit",
+    "subUnitKerja": [
+      "Kecamatan Sibolangit",
+	  "Desa Bandar Baru",
+      "Desa Batu Layang",
+      "Desa Batu Mbelin",
+      "Desa Bengkurung",
+      "Desa Betimus Mbaru",
+      "Desa Bingkawan",
+      "Desa Buah Nabar",
+      "Desa Bukum",
+      "Desa Buluh Awar",
+      "Desa Cinta Rakyat",
+      "Desa Durin Sirugun",
+      "Desa Ketangkuhen",
+      "Desa Kuala",
+      "Desa Martelu",
+      "Desa Negeri Gugung",
+      "Desa Puang Aja",
+      "Desa Rambung Baru",
+      "Desa Rumah Kinangkung Sp",
+      "Desa Rumah Pil-Pil",
+      "Desa Rumah Sumbul",
+      "Desa Sala Bulan",
+      "Desa Sayum Sabah",
+      "Desa Sembahe",
+      "Desa Sibolangit",
+      "Desa Sikeben",
+      "Desa Suka Maju",
+      "Desa Suka Makmur",
+      "Desa Tambunan",
+      "Desa Tanjung Beringin",
+      "Desa Ujung Deleng"
+    ]
+  },
+  {
+    "id": 51,
+    "unitKerja": "Kecamatan Sinembah Tanjung Muda Hilir",
+    "subUnitKerja": [
+      "Kecamatan Sinembah Tanjung Muda Hilir",
+	  "Desa Gunung Rintih",
+      "Desa Juma Tombak",
+      "Desa Kuta Jurung",
+      "Desa Lau Barus Baru",
+      "Desa Lau Rakit",
+      "Desa Lau Rempak",
+      "Desa Limau Mungkur",
+      "Desa Negara Beringin",
+      "Desa Penungkiren",
+      "Desa Rambai",
+      "Desa Siguchi",
+      "Desa Sumbul",
+      "Desa Tadukan Raga",
+      "Desa Tala Peta",
+      "Desa Talun Kenas"
+    ]
+
+  },
+  {
+    "id": 52,
+    "unitKerja": "Kecamatan Sinembah Tanjung Muda Hulu",
+    "subUnitKerja": [
+      "Kecamatan Sinembah Tanjung Muda Hulu",
+	  "Desa Bah Bah Buntu",
+      "Desa Durian Empat Mbelang",
+      "Desa Durin Tinggung",
+      "Desa Gunung Manumpak A",
+      "Desa Gunung Manumpak B",
+      "Desa Kuta Mbelin",
+      "Desa Liang Muda",
+      "Desa Liang Pematang",
+      "Desa Ranggit-git",
+      "Desa Rumah Lengo",
+      "Desa Rumah Rih",
+      "Desa Rumah Sumbul",
+      "Desa Sibunga-bunga Hilir",
+      "Desa Sipinggan",
+      "Desa Tanah Gara Hulu",
+      "Desa Tanjung Bampu",
+      "Desa Tanjung Muda",
+      "Desa Tanjung Raja",
+      "Desa Tanjung Timur",
+      "Desa Tiga Juhar"
+    ]
+  },
+  {
+    "id": 53,
+    "unitKerja": "Kecamatan Sunggal",
+    "subUnitKerja": [
+      "Kecamatan Sunggal",
+	  "Desa Kampung Lalang",
+      "Desa Medan Krio",
+      "Desa Mulyo Rejo",
+      "Desa Paya Geli",
+      "Desa Puji Mulyo",
+      "Desa Purwodadi",
+      "Desa Sei Beras Sekata",
+      "Desa Sei Mencirim",
+      "Desa Sei Semayang",
+      "Desa Serba Jadi",
+      "Desa Suka Maju",
+      "Desa Sumber Melati Diski",
+      "Desa Sunggal Kanan",
+      "Desa Tanjung Gusta",
+      "Desa Tanjung Rejo",
+      "Desa Telaga Sari"
+    ]
+  },
+  {
+    "id": 54,
+    "unitKerja": "Kecamatan Tanjung Morawa",
+    "subUnitKerja": [
+      "Kecamatan Tanjung Morawa",
+	  "Kelurahan Pekan Tanjung Morawa",
+	  "Desa Aek Pancur",
+      "Desa Bandar Labuhan",
+      "Desa Bangun Rejo",
+      "Desa Bangun Sari",
+      "Desa Bangun Sari Baru",
+      "Desa Buntu Bedimbar",
+      "Desa Dagang Kelambir",
+      "Desa Dagang Krawan",
+      "Desa Dalu X A",
+      "Desa Dalu X B",
+      "Desa Lengau Serpang",
+      "Desa Limau Manis",
+      "Desa Medan Sinembah",
+      "Desa Naga Timbul",
+      "Desa Penara Kebun",
+      "Desa Perdamaian",
+      "Desa Punden Rejo",
+      "Desa Sei Merah",
+      "Desa Tanjung Baru",
+      "Desa Tanjung Morawa A",
+      "Desa Tanjung Morawa B",
+      "Desa Tanjung Mulia",
+      "Desa Telaga Sari",
+      "Desa Ujung Serdang",
+      "Desa Wono Sari"
+    ]
+  },
+  {
+    "id": 55,
+    "unitKerja": "Inspektorat",
+    "subUnitKerja": "Inspektorat"
+  }
+]
