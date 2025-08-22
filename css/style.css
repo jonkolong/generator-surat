@@ -1,0 +1,135 @@
+/*--------------------------------------------------------------
+# Sans Serif Fonts
+--------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+/*--------------------------------------------------------------
+# Handwriting Fonts
+--------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
+/* font-family: "Love Ya Like A Sister", cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Love+Ya+Like+A+Sister&display=swap");
+/* font-family: "Gluten", cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* font-family: "Shantell Sans", cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Englebert&display=swap");
+/* font-family: "Englebert", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+/* font-family: "Luckiest Guy", cursive; */
+
+:root {
+  scroll-behavior: smooth;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-mute: #dddddd;
+  --bs-dark: #212529;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-orange: #fd7e14;
+  --bs-teal: #20c997;
+  --bs-indigo: #6610f2;
+  --bs-black: #000;
+  --bs-kominfo: #094a8a;
+}
+
+/* Fonts */
+.poppins {
+  fofant-family: "Poppins", sans-serif;
+}
+
+.livvic {
+  font-family: "Livvic", sans-serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);  
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-kominfo {
+  background-color: var(--bs-kominfo);
+}
+
+.bg-orange {
+  background-color: var(--bs-orange);
+}
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+.btn-kominfo {
+  background-color: var(--bs-kominfo);
+  color: var(--bs-light);
+}
+
+.btn-kominfo:hover {
+  background-color: var(--bs-orange);
+  color: var(--bs-light);
+}
+
+.btn-outline-kominfo {
+  border-color: var(--bs-kominfo);
+  color: var(--bs-kominfo);
+}
+
+.btn-outline-kominfo:hover {
+  background-color: var(--bs-kominfo);
+  color: var(--bs-light);
+}
+
+.btn-orange {
+  background-color: var(--bs-orange);
+  color: var(--bs-light);
+}
+
+.btn-orange:hover {
+  background-color: var(--bs-danger);
+  color: var(--bs-light);
+}
+
+.btn {
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+/* Card */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
