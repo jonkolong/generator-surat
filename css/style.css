@@ -215,3 +215,58 @@ color: var(--bs-kominfo); */
   margin-left: 10px;
   transition: all 300ms ease-out;
 }
+
+/* Partner Kami */
+/* Kontainer utama untuk marquee */
+.marquee-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+/* Wrapper yang akan bergerak/dianimasikan */
+.marquee-content {
+    display: flex;
+    width: fit-content;
+    animation: scroll 40s linear infinite reverse; /* tambahkan reverse untuk kebalikan */
+}
+
+/* Kontrol animasi saat kursor di atasnya */
+.marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+/* Setiap item dalam marquee */
+.marquee-item {
+    flex-shrink: 0;
+    /* Disesuaikan dengan style inline Anda: style="width: 17rem;" */
+    width: 17rem;
+    margin: 0 15px; /* Jarak antar kartu */
+}
+
+/* Hapus dekorasi link default */
+.marquee-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Membuat seluruh area bisa diklik */
+}
+
+.marquee-item .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek hover pada setiap kartu */
+.marquee-item a:hover .card {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* Definisi animasi 'scroll' */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
