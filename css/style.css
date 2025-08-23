@@ -26,6 +26,7 @@
   --bs-primary: #0d6efd;
   --bs-secondary: #6c757d;
   --bs-mute: #dddddd;
+  --bs-super-mute: #f1f1f1ff;
   --bs-dark: #212529;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -59,7 +60,6 @@
 }
 
 body {
-  
   background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);  
   height: 100%;
   background-position: center;
@@ -72,7 +72,9 @@ a {
 }
 
 .bg-kominfo {
-  background-color: var(--bs-kominfo);
+  /* background-color: var(--bs-kominfo); */
+  background: #0047ab;
+  background: radial-gradient(circle, rgba(0, 71, 171, 1) 0%, rgba(0, 37, 89, 1) 100%);
 }
 
 .bg-orange {
@@ -127,7 +129,7 @@ a {
 }
 
 .btn:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     transform: translateY(-3px);
 }
 
@@ -139,7 +141,7 @@ a {
 
 .card:hover {
   transform: translateY(-5px);
-  background-color: var(--bs-mute);
+  background-color: var(--bs-super-mute);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
