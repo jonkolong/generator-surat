@@ -43,6 +43,10 @@
 }
 
 /* Fonts */
+.ibm-plex {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
 .poppins {
   fofant-family: "Poppins", sans-serif;
 }
@@ -53,6 +57,10 @@
 
 .inter {
   font-family: "Inter", sans-serif;
+}
+
+.google-sans {
+  font-family: "Google Sans Code", sans-serif;
 }
 
 .luckiest-guy {
@@ -218,26 +226,37 @@ color: var(--bs-kominfo); */
 
 /* Partner Kami */
 /* Kontainer utama untuk marquee */
-.marquee-container {
+.layanan .marquee-container {
     overflow: hidden;
     width: 100%;
     position: relative;
 }
 
 /* Wrapper yang akan bergerak/dianimasikan */
-.marquee-content {
+.layanan .marquee-content {
     display: flex;
     width: fit-content;
     animation: scroll 40s linear infinite reverse; /* tambahkan reverse untuk kebalikan */
 }
 
+.layanan .marquee-content-2 {
+    display: flex;
+    width: fit-content;
+    animation: scroll 40s linear infinite; /* tambahkan reverse untuk kebalikan */
+}
+
 /* Kontrol animasi saat kursor di atasnya */
-.marquee-container:hover .marquee-content {
+.layanan .marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+/* Kontrol animasi saat kursor di atasnya */
+.layanan .marquee-container:hover .marquee-content-2 {
     animation-play-state: paused;
 }
 
 /* Setiap item dalam marquee */
-.marquee-item {
+.layanan .marquee-item {
     flex-shrink: 0;
     /* Disesuaikan dengan style inline Anda: style="width: 17rem;" */
     width: 17rem;
@@ -245,18 +264,18 @@ color: var(--bs-kominfo); */
 }
 
 /* Hapus dekorasi link default */
-.marquee-item a {
+.layanan .marquee-item a {
     text-decoration: none;
     color: inherit;
     display: block; /* Membuat seluruh area bisa diklik */
 }
 
-.marquee-item .card {
+.layanan .marquee-item .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Efek hover pada setiap kartu */
-.marquee-item a:hover .card {
+.layanan .marquee-item a:hover .card {
     transform: translateY(-8px) scale(1.03);
     box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
 }
